@@ -1,0 +1,2181 @@
+
+<!DOCTYPE html>
+<html style="margin:0; padding:0; height:100%;">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  
+  <body>
+    <div id="root">
+      <!-- NAVIGATION BAR -->
+      <nav id="header" class="fixed w-full z-30 top-0 bg-neutral-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex items-center justify-between h-16">
+            <div class="flex items-center">
+              <img src="images/WOPI_LOGO_UPDATED.png" alt="WomenInOptics Logo" class="h-20 w-auto">
+            </div>
+            <div class="hidden md:flex ml-10 space-x-4" id="nav-links-desktop"></div>
+            <div class="md:hidden">
+              <button id="mobile-menu-button" aria-label="Open menu" class="inline-flex items-center justify-center p-2 rounded-md hover:bg-neutral-700 focus:ring-2 focus:ring-inset focus:ring-white">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+  
+        <!-- MOBILE MENU -->
+        <div id="mobile-menu" class="hidden md:hidden bg-neutral-800 pb-3 pt-2">
+          <div class="space-y-1 px-3" id="nav-links-mobile"></div>
+        </div>
+      </nav>
+  
+      <!-- HERO SECTION -->
+      <section id="hero" class="relative bg-gradient-to-br from-neutral-900 to-[#3f1959] text-white pt-20 min-h-[70vh] flex items-center">
+        <div class="absolute inset-0 overflow-hidden">
+          <div class="particles-container w-full h-full opacity-20"></div>
+        </div>
+  
+        <div class="container mx-auto px-4 py-16 sm:py-24 lg:py-32 relative z-10 text-center">
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-[#8e44ad] to-[#3498db]">AUA Academic Conference 2025</span>
+          </h1>
+          <h2 class="text-xl md:text-2xl lg:text-3xl font-light mb-8">Women in Optics and Photonics in India-Asia Conference</h2>
+          <p class="text-lg md:text-xl mb-12 max-w-3xl mx-auto text-gray-200">
+            Join leading women scientists and researchers for a groundbreaking conference exploring the latest innovations in optics and photonics.
+          </p>
+  
+          <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+            <div class="bg-neutral-800 bg-opacity-70 px-6 py-4 rounded-lg text-center">
+              <div class="text-[#e74c3c] font-bold text-xl mb-1">December 5-7, 2025</div>
+              <div class="text-gray-300">Conference Dates</div>
+            </div>
+            <div class="bg-neutral-800 bg-opacity-70 px-6 py-4 rounded-lg text-center">
+              <div class="text-[#3498db] font-bold text-xl mb-1">PEC Chandigarh</div>
+              <div class="text-gray-300">Conference Location</div>
+            </div>
+          </div>
+  
+          <div class="mt-12">
+            <a href="#registration" class="inline-block bg-[#8e44ad] hover:bg-[#7d3b98] text-white font-bold py-3 px-8 rounded-full transition-transform hover:scale-105 shadow-lg">Register Now</a>
+            <a href="#schedule" class="inline-block ml-4 bg-transparent hover:bg-white/10 text-white font-semibold py-3 px-8 border border-white/30 rounded-full hover:border-white/60">View Schedule</a>
+          </div>
+        </div>
+  
+        <!-- Decorative Wave -->
+        <div class="absolute bottom-0 left-0 right-0">
+          <svg viewBox="0 0 1440 200" class="w-full h-auto fill-white">
+            <path d="M0,160L48,144C96,128,192,96,288,90.7C384,85,480,107,576,128C672,149,768,171,864,165.3C960,160,1056,128,1152,122.7C1248,117,1344,139,1392,149.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+          </svg>
+        </div>
+      </section>
+    </div>
+    <script src="main.js" defer></script>
+
+
+<section id="about" class="py-16 md:py-24 bg-white dark:bg-neutral-100">
+  <div class="max-w-6xl mx-auto text-center mb-16">
+    <h2 class="text-3xl md:text-4xl font-bold text-neutral-800 dark:text-neutral-800">
+      About the <span class="text-[#8e44ad]">Conference</span>
+    </h2>
+    <div class="w-20 h-1 bg-[#e74c3c] mx-auto mb-6"></div>
+    <p class="text-lg text-neutral-600 dark:text-neutral-600 mx-auto max-w-3xl">
+      Bringing together the brightest minds in optics and photonics to celebrate and advance women in science.
+    </p>
+  </div>
+
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+    <!-- Left side image/quote -->
+    <div class="bg-gradient-to-br from-purple-100 to-blue-50 dark:from-purple-200 dark:to-blue-100 p-8 rounded-xl shadow-lg hover:scale-105 transform transition-all duration-500">
+      <div class="relative">
+        <svg class="text-[#8e44ad] w-16 h-16 mb-4 opacity-20" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <path d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z"></path>
+        </svg>
+        <blockquote class="text-xl italic font-medium text-neutral-700 dark:text-neutral-700">
+          Our mission is to empower women scientists, researchers, and students in the field of optics and photonics by providing a platform for knowledge sharing, networking, and professional growth.
+        </blockquote>
+        <div class="mt-6 flex items-center">
+          <div class="h-10 w-10 rounded-full bg-[#8e44ad] flex items-center justify-center text-white font-bold">WP</div>
+          <div class="ml-4">
+            <p class="font-semibold text-neutral-800 dark:text-neutral-800">Dr. Sarah Chen</p>
+            <p class="text-sm text-neutral-600 dark:text-neutral-600">Conference Chair</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right side content -->
+    <div class="space-y-6">
+      <div class="bg-neutral-50 dark:bg-white p-6 rounded-lg border-l-4 border-[#3498db] shadow-sm">
+        <h3 class="text-xl font-bold text-neutral-800 dark:text-neutral-800">Mission</h3>
+        <p class="text-neutral-600 dark:text-neutral-600">
+          To create an inclusive environment that highlights the achievements of women in optics and photonics while fostering diversity and collaboration in scientific advancement.
+        </p>
+      </div>
+
+      <div class="bg-neutral-50 dark:bg-white p-6 rounded-lg border-l-4 border-[#8e44ad] shadow-sm">
+        <h3 class="text-xl font-bold text-neutral-800 dark:text-neutral-800">Who Should Attend</h3>
+        <ul class="list-disc pl-5 text-neutral-600 dark:text-neutral-600 space-y-2">
+          <li>Researchers and scientists in optics, photonics, and related fields</li>
+          <li>Industry professionals interested in the latest technological advancements</li>
+          <li>Graduate and undergraduate students pursuing careers in STEM</li>
+          <li>Academic faculty and educators</li>
+          <li>Anyone passionate about supporting women in science</li>
+        </ul>
+      </div>
+
+      <div class="bg-neutral-50 dark:bg-white p-6 rounded-lg border-l-4 border-[#e74c3c] shadow-sm">
+        <h3 class="text-xl font-bold text-neutral-800 dark:text-neutral-800">Conference Highlights</h3>
+        <div class="grid grid-cols-2 gap-4 mt-4">
+          <div class="flex items-start">
+            <div class="bg-[#3498db] bg-opacity-10 p-2 rounded-full mr-3">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#3498db]" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+            </div>
+            <span class="text-neutral-700 dark:text-neutral-700">Keynote Speeches</span>
+          </div>
+          <div class="flex items-start">
+            <div class="bg-[#8e44ad] bg-opacity-10 p-2 rounded-full mr-3">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#8e44ad]" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+            </div>
+            <span class="text-neutral-700 dark:text-neutral-700">Panel Discussions</span>
+          </div>
+          <div class="flex items-start">
+            <div class="bg-[#e74c3c] bg-opacity-10 p-2 rounded-full mr-3">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#e74c3c]" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+            </div>
+            <span class="text-neutral-700 dark:text-neutral-700">Workshops</span>
+          </div>
+          <div class="flex items-start">
+            <div class="bg-[#3498db] bg-opacity-10 p-2 rounded-full mr-3">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#3498db]" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+            </div>
+            <span class="text-neutral-700 dark:text-neutral-700">Networking Events</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stats -->
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16">
+    <div class="text-center p-6 bg-neutral-50 dark:bg-white rounded-lg shadow-sm hover:scale-105">
+      <div class="text-4xl font-bold text-[#e74c3c]">3</div>
+      <div class="text-neutral-700 dark:text-neutral-700 mt-2">Days</div>
+    </div>
+    <div class="text-center p-6 bg-neutral-50 dark:bg-white rounded-lg shadow-sm hover:scale-105">
+      <div class="text-4xl font-bold text-[#8e44ad]">20+</div>
+      <div class="text-neutral-700 dark:text-neutral-700 mt-2">Speakers</div>
+    </div>
+    <div class="text-center p-6 bg-neutral-50 dark:bg-white rounded-lg shadow-sm hover:scale-105">
+      <div class="text-4xl font-bold text-[#3498db]">12</div>
+      <div class="text-neutral-700 dark:text-neutral-700 mt-2">Workshops</div>
+    </div>
+    <div class="text-center p-6 bg-neutral-50 dark:bg-white rounded-lg shadow-sm hover:scale-105">
+      <div class="text-4xl font-bold text-[#e74c3c]">500+</div>
+      <div class="text-neutral-700 dark:text-neutral-700 mt-2">Expected Attendees</div>
+    </div>
+  </div>
+
+<div class="gallery-section mt-20">
+  <div class="text-center mb-12">
+    <h2 class="section-title">Photo <span class="highlight">Gallery</span></h2>
+    <div class="separator"></div>
+    <p class="section-subtitle">
+      Explore moments from our previous conferences and get a glimpse of our beautiful venue.
+    </p>
+  </div>
+
+  <!-- Tabs -->
+  <div class="tab-buttons mb-8">
+    <button class="tab active" data-category="conference">Previous Conferences</button>
+    <button class="tab" data-category="venue">Venue Tour</button>
+  </div>
+
+  <!-- Slideshow -->
+  <div class="slideshow-wrapper">
+    <div class="slideshow-container">
+      <!-- Conference Slides -->
+      <div class="slide-category active" id="conference-slides">
+        <div class="slide active"><img src="images/keynote.jpg" alt="Conference Keynote"><div class="caption"><h3>Keynote Address</h3><p>2023 Conference</p></div></div>
+        <div class="slide"><img src="images/Panel Discussion.JPG" alt="Panel Discussion"><div class="caption"><h3>Expert Panel</h3><p>Women in STEM Discussion</p></div></div>
+        <div class="slide"><img src="images/Workshop.jpg" alt="Workshop Session"><div class="caption"><h3>Interactive Workshop</h3><p>Hands-on Learning</p></div></div>
+      </div>
+
+      <!-- Venue Slides -->
+      <div class="slide-category" id="venue-slides">
+        <div class="slide"><img src="images/Helicopter.avif" alt="College Campus"><div class="caption"><h3>Campus Overview</h3><p>Main University Grounds</p></div></div>
+        <div class="slide"><img src="images/DSABuilding.webp" alt="Conference Hall"><div class="caption"><h3>Main Auditorium</h3><p>Where keynotes will be held</p></div></div>
+        <div class="slide"><img src="images/NAB.jpg" alt="Research Facilities"><div class="caption"><h3>Research Labs</h3><p>State-of-the-art facilities</p></div></div>
+      </div>
+
+      <!-- Arrows -->
+      <a class="nav prev">&#10094;</a>
+      <a class="nav next">&#10095;</a>
+
+      <!-- Dots -->
+      <div class="dots-container"></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="section-bb82434e-fc90-4c01-8b54-ae2599e4c987">
+  <div id="root">
+    <section id="dates" class="py-20 bg-gradient-to-b from-neutral-50 to-white dark:from-neutral-200 dark:to-neutral-100">
+      <div class="container mx-auto px-4">
+        <div class="max-w-5xl mx-auto">
+          <!-- Section Header -->
+          <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-neutral-800 dark:text-neutral-800">
+              Important <span class="text-[#8e44ad]">Dates</span>
+            </h2>
+            <div class="w-20 h-1 bg-[#e74c3c] mx-auto mb-6"></div>
+            <p class="text-lg text-neutral-600 dark:text-neutral-600 max-w-3xl mx-auto">
+              Mark your calendar for these key deadlines and events related to the Women in Optics &amp; Photonics Conference 2023.
+            </p>
+          </div>
+
+          <!-- Timeline -->
+          <div class="relative">
+            <!-- Vertical Line -->
+            <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-[#8e44ad] to-[#3498db] rounded-full hidden md:block"></div>
+
+            <!-- Timeline Items -->
+            <div class="space-y-12 md:space-y-0">
+
+              <!-- April 15 -->
+              <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 md:pr-12 md:text-right mb-8 md:mb-0">
+                  <div class="bg-white dark:bg-white shadow-md rounded-lg p-6 transform transition-transform duration-300 hover:scale-105 border-t-4 border-[#e74c3c]">
+                    <h3 class="text-xl font-bold text-[#8e44ad] mb-2">April 15, 2023</h3>
+                    <h4 class="text-lg font-semibold text-neutral-800 mb-3">Call for Papers &amp; Abstracts</h4>
+                    <p class="text-neutral-600">Submissions open for research papers, poster presentations, and workshop proposals.</p>
+                  </div>
+                </div>
+                <div class="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 bg-[#e74c3c] rounded-full flex items-center justify-center shadow-lg border-4 border-white dark:border-white hidden md:flex">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                  </svg>
+                </div>
+              </div>
+
+              <!-- June 30 -->
+              <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 hidden md:block"></div>
+                <div class="md:w-1/2 md:pl-12 mb-8 md:mb-0">
+                  <div class="bg-white dark:bg-white shadow-md rounded-lg p-6 transform transition-transform duration-300 hover:scale-105 border-t-4 border-[#3498db]">
+                    <h3 class="text-xl font-bold text-[#8e44ad] mb-2">June 30, 2023</h3>
+                    <h4 class="text-lg font-semibold text-neutral-800 mb-3">Abstract Submission Deadline</h4>
+                    <p class="text-neutral-600">Last day to submit your research abstracts and proposals for review by the committee.</p>
+                  </div>
+                </div>
+                <div class="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 bg-[#3498db] rounded-full flex items-center justify-center shadow-lg border-4 border-white dark:border-white hidden md:flex">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
+                  </svg>
+                </div>
+              </div>
+
+              <!-- July 15 -->
+              <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 md:pr-12 md:text-right mb-8 md:mb-0">
+                  <div class="bg-white dark:bg-white shadow-md rounded-lg p-6 transform transition-transform duration-300 hover:scale-105 border-t-4 border-[#8e44ad]">
+                    <h3 class="text-xl font-bold text-[#8e44ad] mb-2">July 15, 2023</h3>
+                    <h4 class="text-lg font-semibold text-neutral-800 mb-3">Notification of Acceptance</h4>
+                    <p class="text-neutral-600">Authors will be notified about the acceptance of their submissions.</p>
+                  </div>
+                </div>
+                <div class="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 bg-[#8e44ad] rounded-full flex items-center justify-center shadow-lg border-4 border-white dark:border-white hidden md:flex">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                </div>
+              </div>
+
+              <!-- August 15 -->
+              <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 hidden md:block"></div>
+                <div class="md:w-1/2 md:pl-12 mb-8 md:mb-0">
+                  <div class="bg-white dark:bg-white shadow-md rounded-lg p-6 transform transition-transform duration-300 hover:scale-105 border-t-4 border-[#e74c3c]">
+                    <h3 class="text-xl font-bold text-[#8e44ad] mb-2">August 15, 2023</h3>
+                    <h4 class="text-lg font-semibold text-neutral-800 mb-3">Early Bird Registration Deadline</h4>
+                    <p class="text-neutral-600">Last day to register at the discounted early bird rate. Regular rates apply afterwards.</p>
+                  </div>
+                </div>
+                <div class="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 bg-[#e74c3c] rounded-full flex items-center justify-center shadow-lg border-4 border-white dark:border-white hidden md:flex">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                </div>
+              </div>
+
+              <!-- September 1 -->
+              <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 md:pr-12 md:text-right mb-8 md:mb-0">
+                  <div class="bg-white dark:bg-white shadow-md rounded-lg p-6 transform transition-transform duration-300 hover:scale-105 border-t-4 border-[#3498db]">
+                    <h3 class="text-xl font-bold text-[#8e44ad] mb-2">September 1, 2023</h3>
+                    <h4 class="text-lg font-semibold text-neutral-800 mb-3">Final Program Announcement</h4>
+                    <p class="text-neutral-600">Complete conference schedule and program details will be published.</p>
+                  </div>
+                </div>
+                <div class="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 bg-[#3498db] rounded-full flex items-center justify-center shadow-lg border-4 border-white dark:border-white hidden md:flex">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+                  </svg>
+                </div>
+              </div>
+
+              <!-- Conference dates -->
+              <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 hidden md:block"></div>
+                <div class="md:w-1/2 md:pl-12">
+                  <div class="bg-gradient-to-r from-[#8e44ad] to-[#3498db] text-white shadow-xl rounded-lg p-6 transform transition-transform duration-300 hover:scale-105">
+                    <h3 class="text-xl font-semibold mb-2">September 15-18, 2023</h3>
+                    <h4 class="text-lg font-medium mb-3">Conference Days</h4>
+                    <p class="text-white text-opacity-90">
+                      The main event! Three days of keynotes, presentations, workshops, and networking opportunities.
+                    </p>
+                    <div class="mt-4 py-2 px-4 bg-white bg-opacity-20 rounded-lg inline-block">
+                      <span class="font-medium">San Francisco, California</span>
+                    </div>
+                  </div>
+                </div>
+              
+                <!-- Circle marker -->
+                <div class="absolute left-1/2 transform -translate-x-1/2 w-10 h-10 bg-gradient-to-r from-[#8e44ad] to-[#3498db] rounded-full flex items-center justify-center shadow-lg border-4 border-white dark:border-white hidden md:flex">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTA Button -->
+          <div class="mt-16 text-center">
+            <a href="#registration" class="inline-flex items-center px-6 py-3 bg-[#8e44ad] hover:bg-[#7d3b98] text-white font-semibold rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+              </svg>
+              Add to Your Calendar
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</section>
+
+
+
+<section id="section-c5823e6e-ad10-4196-8baa-3741adb50942">
+  <div id="root">
+    <section id="speakers" class="py-20 bg-neutral-900 text-white">
+      <div class="container mx-auto px-4">
+        <!-- Section header -->
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">
+            Featured <span class="text-[#e74c3c]">Speakers</span>
+          </h2>
+          <div class="w-20 h-1 bg-[#8e44ad] mx-auto mb-6"></div>
+          <p class="text-lg text-gray-300 max-w-3xl mx-auto">
+            Meet the innovative minds and leading researchers who will be sharing their expertise at the Women in Optics & Photonics Conference.
+          </p>
+        </div>
+
+        <!-- Tabs for speaker categories -->
+        <div class="mb-12 flex flex-wrap justify-center" x-data="{ activeTab: 'keynote' }">
+          <button @click="activeTab = 'keynote'" :class="{ 'bg-[#8e44ad] border-[#8e44ad]': activeTab === 'keynote', 'bg-transparent border-gray-600 hover:border-gray-400': activeTab !== 'keynote' }" class="px-6 py-2 rounded-full border-2 transition-colors duration-300 m-2 focus:outline-none">
+            Keynote Speakers
+          </button>
+          <button @click="activeTab = 'panel'" :class="{ 'bg-[#8e44ad] border-[#8e44ad]': activeTab === 'panel', 'bg-transparent border-gray-600 hover:border-gray-400': activeTab !== 'panel' }" class="px-6 py-2 rounded-full border-2 transition-colors duration-300 m-2 focus:outline-none">
+            Panel Moderators
+          </button>
+          <button @click="activeTab = 'workshop'" :class="{ 'bg-[#8e44ad] border-[#8e44ad]': activeTab === 'workshop', 'bg-transparent border-gray-600 hover:border-gray-400': activeTab !== 'workshop' }" class="px-6 py-2 rounded-full border-2 transition-colors duration-300 m-2 focus:outline-none">
+            Workshop Leaders
+          </button>
+        </div>
+
+        <!-- Keynote Speakers Grid -->
+        <div x-show="activeTab === 'keynote'" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform scale-95" x-transition:enter-end="opacity-100 transform scale-100">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Speaker 1 -->
+            <div class="bg-neutral-800 rounded-xl overflow-hidden shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl group">
+              <div class="h-56 bg-gradient-to-r from-[#8e44ad] to-[#3498db] relative overflow-hidden">
+                <div class="absolute inset-0 flex items-center justify-center">
+                  <div class="w-24 h-24 rounded-full bg-neutral-800 flex items-center justify-center">
+                    <span class="text-4xl font-bold text-white">DR</span>
+                  </div>
+                </div>
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-bold mb-1 group-hover:text-[#e74c3c] transition-colors duration-300">Dr. Rebecca Liu</h3>
+                <p class="text-[#8e44ad] font-medium mb-3">MIT • Optical Quantum Computing</p>
+                <p class="text-gray-300 mb-4 text-sm">
+                  Leading researcher in quantum photonics with breakthrough achievements in optical computing architecture.
+                </p>
+                <div class="flex justify-between items-center">
+                  <span class="text-xs text-gray-400">Keynote: Day 1</span>
+                  <div class="flex space-x-2">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
+                      </svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Speaker 2 -->
+            <div class="bg-neutral-800 rounded-xl overflow-hidden shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl group">
+              <div class="h-56 bg-gradient-to-r from-[#e74c3c] to-[#8e44ad] relative overflow-hidden">
+                <div class="absolute inset-0 flex items-center justify-center">
+                  <div class="w-24 h-24 rounded-full bg-neutral-800 flex items-center justify-center">
+                    <span class="text-4xl font-bold text-white">MK</span>
+                  </div>
+                </div>
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-bold mb-1 group-hover:text-[#e74c3c] transition-colors duration-300">Dr. Maria Kim</h3>
+                <p class="text-[#8e44ad] font-medium mb-3">Stanford • Biophotonics</p>
+                <p class="text-gray-300 mb-4 text-sm">
+                  Pioneer in developing optical techniques for non-invasive cancer detection and treatment.
+                </p>
+                <div class="flex justify-between items-center">
+                  <span class="text-xs text-gray-400">Keynote: Day 2</span>
+                  <div class="flex space-x-2">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
+                      </svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel Moderators Section -->
+        <div x-show="activeTab === 'panel'" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform scale-95" x-transition:enter-end="opacity-100 transform scale-100">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Speaker 1 -->
+            <div class="bg-neutral-800 rounded-xl overflow-hidden shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl group">
+              <div class="h-56 bg-gradient-to-r from-[#e74c3c] to-[#3498db] relative overflow-hidden">
+                <div class="absolute inset-0 flex items-center justify-center">
+                  <div class="w-24 h-24 rounded-full bg-neutral-800 flex items-center justify-center">
+                    <span class="text-4xl font-bold text-white">JS</span>
+                  </div>
+                </div>
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-bold mb-1 group-hover:text-[#e74c3c] transition-colors duration-300">John Smith</h3>
+                <p class="text-[#8e44ad] font-medium mb-3">University of Oxford • Panel Moderator</p>
+                <p class="text-gray-300 mb-4 text-sm">
+                  Expert in panel discussions on quantum optics and its interdisciplinary applications.
+                </p>
+                <div class="flex justify-between items-center">
+                  <span class="text-xs text-gray-400">Panel: Day 1</span>
+                  <div class="flex space-x-2">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
+                      </svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Workshop Leaders Section -->
+        <div x-show="activeTab === 'workshop'" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform scale-95" x-transition:enter-end="opacity-100 transform scale-100">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Speaker 1 -->
+            <div class="bg-neutral-800 rounded-xl overflow-hidden shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl group">
+              <div class="h-56 bg-gradient-to-r from-[#3498db] to-[#e74c3c] relative overflow-hidden">
+                <div class="absolute inset-0 flex items-center justify-center">
+                  <div class="w-24 h-24 rounded-full bg-neutral-800 flex items-center justify-center">
+                    <span class="text-4xl font-bold text-white">AW</span>
+                  </div>
+                </div>
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-bold mb-1 group-hover:text-[#e74c3c] transition-colors duration-300">Alice Walker</h3>
+                <p class="text-[#8e44ad] font-medium mb-3">Harvard • Workshop Leader</p>
+                <p class="text-gray-300 mb-4 text-sm">
+                  Leading workshops on photonic technologies and their applications in biomedical fields.
+                </p>
+                <div class="flex justify-between items-center">
+                  <span class="text-xs text-gray-400">Workshop: Day 2</span>
+                  <div class="flex space-x-2">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
+                      </svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- See all speakers button -->
+        <div class="text-center mt-12">
+          <button class="bg-transparent hover:bg-[#8e44ad] text-white font-semibold hover:text-white py-3 px-8 border border-[#8e44ad] hover:border-transparent rounded-full transition-colors duration-300">
+            See All Speakers
+          </button>
+        </div>
+      </div>
+    </section>
+  </div>
+</section>
+
+
+<section id="section-28cbafe1-3819-4cfa-adc2-fd7e111d448e">
+  <div id="root">
+    <section id="schedule" class="py-20 bg-white dark:bg-neutral-100">
+      <div class="container mx-auto px-4">
+        <!-- Section header -->
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4 text-neutral-800 dark:text-neutral-800">
+            Conference <span class="text-[#8e44ad]">Schedule</span>
+          </h2>
+          <div class="w-20 h-1 bg-[#e74c3c] mx-auto mb-6"></div>
+          <p class="text-lg text-neutral-600 dark:text-neutral-600 max-w-3xl mx-auto">
+            Explore our comprehensive program of presentations, workshops, and networking events for the three-day conference.
+          </p>
+        </div>
+
+        <!-- Day selection tabs -->
+        <div class="flex flex-wrap justify-center mb-12" x-data="{ activeDay: 'day1' }">
+          <button @click="activeDay = 'day1'" :class="{ 'bg-[#8e44ad] text-white': activeDay === 'day1', 'bg-gray-100 text-gray-800 hover:bg-gray-200': activeDay !== 'day1' }" class="px-6 py-3 rounded-l-lg font-medium transition-colors duration-300 focus:outline-none">
+            Day 1 - Dec 5
+          </button>
+          <button @click="activeDay = 'day2'" :class="{ 'bg-[#8e44ad] text-white': activeDay === 'day2', 'bg-gray-100 text-gray-800 hover:bg-gray-200': activeDay !== 'day2' }" class="px-6 py-3 font-medium transition-colors duration-300 focus:outline-none">
+            Day 2 - Dec 6
+          </button>
+          <button @click="activeDay = 'day3'" :class="{ 'bg-[#8e44ad] text-white': activeDay === 'day3', 'bg-gray-100 text-gray-800 hover:bg-gray-200': activeDay !== 'day3' }" class="px-6 py-3 rounded-r-lg font-medium transition-colors duration-300 focus:outline-none">
+            Day 3 - Dec 7
+          </button>
+        </div>
+
+        <!-- Day 1 Schedule -->
+        <div x-show="activeDay === 'day1'" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100">
+          <div class="max-w-5xl mx-auto bg-white dark:bg-white shadow-md rounded-xl overflow-hidden">
+            <!-- Morning -->
+            <div class="bg-gradient-to-r from-[#8e44ad]/10 to-[#3498db]/10 px-4 py-3">
+              <h3 class="text-lg font-bold text-neutral-800">Afternoon Sessions</h3>
+            </div>
+            
+            <!-- 2:00 PM - 4:00 PM Conference Registration & High Tea -->
+            <div class="grid grid-cols-8 border-b border-gray-100">
+              <div class="col-span-2 sm:col-span-2 px-4 py-3 bg-gray-50 font-semibold text-gray-700 whitespace-nowrap">
+                2:00 PM - 4:00 PM
+              </div>
+              <div class="col-span-6 sm:col-span-6 px-4 py-3">
+                <div class="flex items-center">
+                  <span class="font-medium">Conference Registration & High Tea</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4:00 PM - 4:30 PM Inaugural Session -->
+            <div class="grid grid-cols-8 border-b border-gray-100">
+              <div class="col-span-2 sm:col-span-2 px-4 py-3 bg-gray-50 font-semibold text-gray-700 whitespace-nowrap">
+                4:00 PM - 4:30 PM
+              </div>
+              <div class="col-span-6 sm:col-span-6 px-4 py-3">
+                <div class="flex items-center">
+                  <span class="font-medium">Inaugural Session (Chief Guest, Director (PEC))</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4:30 PM - 5:00 PM Workshops -->
+            <div class="grid grid-cols-8 border-b border-gray-100">
+              <div class="col-span-2 sm:col-span-2 px-4 py-3 bg-gray-50 font-semibold text-gray-700 whitespace-nowrap">
+                4:30 PM - 5:00 PM
+              </div>
+              <div class="col-span-6 sm:col-span-6 px-4 py-3">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div>
+                    <div class="flex items-center">
+                      <span class="font-medium">Talk by Chief Guest (Kiran Bedi/Sudha Murti/.....)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 5:00 PM - 5:30 PM Reception -->
+            <div class="grid grid-cols-8 border-b border-gray-100">
+              <div class="col-span-2 sm:col-span-2 px-4 py-3 bg-gray-50 font-semibold text-gray-700 whitespace-nowrap">
+                5:00 PM - 5:30 PM
+              </div>
+              <div class="col-span-6 sm:col-span-6 px-4 py-3">
+                <div class="flex items-center">
+                  <span class="font-medium">Plenary Talk 1 (CSIR Director Gen/Kiran Shaw.........)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 7:00 PM End -->
+            <div class="grid grid-cols-8">
+              <div class="col-span-2 sm:col-span-2 px-4 py-3 bg-gray-50 font-semibold text-gray-700 whitespace-nowrap">
+                5:30 PM - 6:30 PM
+              </div>
+              <div class="col-span-6 sm:col-span-6 px-4 py-3">
+                <span class="font-medium">Workshop by Prof. Anita Mahadevan</span>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-8">
+              <div class="col-span-2 sm:col-span-2 px-4 py-3 bg-gray-50 font-semibold text-gray-700 whitespace-nowrap">
+                6:30 PM - 7:30 PM
+              </div>
+              <div class="col-span-6 sm:col-span-6 px-4 py-3">
+                <span class="font-medium">Poster Presentation</span>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-8">
+              <div class="col-span-2 sm:col-span-2 px-4 py-3 bg-gray-50 font-semibold text-gray-700 whitespace-nowrap">
+                7:30 PM Onwards
+              </div>
+              <div class="col-span-6 sm:col-span-6 px-4 py-3">
+                <span class="font-medium">Gala Dinner</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Day 2 Schedule -->
+        <div x-show="activeDay === 'day2'" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" class="hidden">
+          <div class="max-w-5xl mx-auto bg-white dark:bg-white shadow-md rounded-xl overflow-hidden">
+            <!-- Day 2 content would be here, similar structure to Day 1 -->
+            <div class="p-8 text-center text-gray-500">
+              <p>Day 2 schedule will be similar to Day 1 with different sessions and speakers.</p>
+              <p class="mt-2">Please check back later for the detailed schedule.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Day 3 Schedule -->
+        <div x-show="activeDay === 'day3'" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" class="hidden">
+          <div class="max-w-5xl mx-auto bg-white dark:bg-white shadow-md rounded-xl overflow-hidden">
+            <!-- Day 3 content would be here, similar structure to Day 1 -->
+            <div class="p-8 text-center text-gray-500">
+              <p>Day 3 schedule will be similar to previous days with different sessions and speakers.</p>
+              <p class="mt-2">Please check back later for the detailed schedule.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Download button -->
+        <div class="text-center mt-12">
+          <a href="#" class="inline-flex items-center px-6 py-3 bg-[#8e44ad] hover:bg-[#7d3b98] text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+            </svg>
+            Download Flyer (PDF)
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+</section>
+
+<section id="section-4ad38dca-cf21-4b00-be40-2bb9cf291e47">
+  <div id="root">
+    <section id="registration" class="py-20 bg-gradient-to-b from-neutral-900 to-[#3f1959] text-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-6xl mx-auto">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">
+              <span class="text-[#e74c3c]">Registration</span> Information
+            </h2>
+            <div class="w-20 h-1 bg-[#3498db] mx-auto mb-6"></div>
+            <p class="text-lg text-gray-300 max-w-3xl mx-auto">
+              Secure your spot at the Women in Optics &amp; Photonics Conference 2025.
+            </p>
+          </div>
+
+          <!-- Registration cards -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+          </div>
+
+          <!-- Registration form -->
+          <div class="bg-neutral-800 rounded-xl shadow-2xl overflow-hidden">
+            <div class="p-8 md:p-10">
+              <h3 class="text-2xl font-bold mb-6">Register for the Conference</h3>
+
+              <form class="space-y-6">
+                <!-- Personal Information -->
+                <div>
+                  <h4 class="text-lg font-semibold mb-4 text-[#e74c3c]">Personal Information</h4>
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+                    <div>
+                      <label for="first-name" class="block text-sm font-medium text-gray-300 mb-1">First Name *</label>
+                      <input type="text" id="first-name" name="first-name" required="" class="w-full px-4 py-2 bg-neutral-700 border border-neutral-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8e44ad] text-white">
+                    </div>
+                    <div>
+                      <label for="last-name" class="block text-sm font-medium text-gray-300 mb-1">Last Name *</label>
+                      <input type="text" id="last-name" name="last-name" required="" class="w-full px-4 py-2 bg-neutral-700 border border-neutral-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8e44ad] text-white">
+                    </div>
+                    <div>
+                      <label for="email" class="block text-sm font-medium text-gray-300 mb-1">Email Address *</label>
+                      <input type="email" id="email" name="email" required="" class="w-full px-4 py-2 bg-neutral-700 border border-neutral-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8e44ad] text-white">
+                    </div>
+                    <div>
+                      <label for="phone" class="block text-sm font-medium text-gray-300 mb-1">Phone Number</label>
+                      <input type="tel" id="phone" name="phone" class="w-full px-4 py-2 bg-neutral-700 border border-neutral-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8e44ad] text-white">
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Affiliation Information -->
+                <div>
+                  <h4 class="text-lg font-semibold mb-4 text-[#3498db]">Affiliation</h4>
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+                    <div>
+                      <label for="organization" class="block text-sm font-medium text-gray-300 mb-1">Organization/Institution *</label>
+                      <input type="text" id="organization" name="organization" required="" class="w-full px-4 py-2 bg-neutral-700 border border-neutral-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8e44ad] text-white">
+                    </div>
+                    <div>
+                      <label for="position" class="block text-sm font-medium text-gray-300 mb-1">Position/Title</label>
+                      <input type="text" id="position" name="position" class="w-full px-4 py-2 bg-neutral-700 border border-neutral-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8e44ad] text-white">
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Submit Button -->
+                <div>
+                  <button type="submit" class="w-full py-3 bg-[#e74c3c] hover:bg-[#c0392b] rounded-lg font-bold transition-colors duration-300">Submit Registration</button>
+                </div>
+              </form>
+            
+              <!-- Need Help? -->
+              <div class="bg-neutral-800 bg-opacity-50 p-6 rounded-lg">
+                <div class="flex items-center mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#3498db] mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                  </svg>
+                  <h4 class="text-xl font-bold">Need Help?</h4>
+                </div>
+                <p class="text-gray-300">
+                  If you have any questions or need assistance with your registration, our team is here to help.
+                </p>
+                <a href="#" class="inline-block mt-4 text-[#3498db] hover:text-[#2980b9] font-medium">Contact support →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</section>
+
+
+
+
+
+<section id="section-0a31031f-5137-45d3-a6e3-769629e23996">
+  <div id="root">
+    <section id="venue" class="py-20 bg-white dark:bg-neutral-100">
+      <div class="container mx-auto px-4">
+        <!-- Section header -->
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4 text-neutral-800 dark:text-neutral-800">
+            Conference <span class="text-[#8e44ad]">Venue</span>
+          </h2>
+          <div class="w-20 h-1 bg-[#e74c3c] mx-auto mb-6"></div>
+          <p class="text-lg text-neutral-600 dark:text-neutral-600 max-w-3xl mx-auto">
+            Join us at Punjab Engineering College, Chandigarh.
+          </p>
+        </div>
+
+        <!-- Venue information and map section -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+          <!-- Venue information -->
+          <div class="space-y-8">
+            <div class="bg-gradient-to-r from-purple-100 to-indigo-100 dark:from-purple-200 dark:to-indigo-200 rounded-xl shadow-lg p-8">
+              <h3 class="text-2xl font-bold mb-4 text-neutral-800">San Francisco Convention Center</h3>
+              <div class="space-y-4">
+                <div class="flex items-start">
+                  <div class="flex-shrink-0 mt-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#8e44ad]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                    </svg>
+                  </div>
+                  <div class="ml-4">
+                    <h4 class="text-lg font-semibold text-neutral-800">Address</h4>
+                    <p class="text-neutral-600">747 Howard Street<br>San Francisco, CA 94103<br>United States</p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start">
+                  <div class="flex-shrink-0 mt-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#e74c3c]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                    </svg>
+                  </div>
+                  <div class="ml-4">
+                    <h4 class="text-lg font-semibold text-neutral-800">Contact</h4>
+                    <p class="text-neutral-600">Phone: +1 (415) 555-1234<br>Email: info@womenoptics2023.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="bg-white dark:bg-white shadow-md rounded-xl p-8">
+              <h3 class="text-xl font-bold mb-4 text-neutral-800 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-[#3498db]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                </svg>
+                Venue Highlights
+              </h3>
+              <ul class="space-y-3">
+                <li class="flex items-start">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#8e44ad] mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span class="text-neutral-600">State-of-the-art auditorium with seating for 1,200+ attendees</span>
+                </li>
+                <li class="flex items-start">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#8e44ad] mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span class="text-neutral-600">Multiple breakout rooms for simultaneous sessions</span>
+                </li>
+                <li class="flex items-start">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#8e44ad] mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span class="text-neutral-600">Exhibition space for industry partners and poster sessions</span>
+                </li>
+                <li class="flex items-start">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#8e44ad] mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span class="text-neutral-600">High-speed WiFi throughout the venue</span>
+                </li>
+                <li class="flex items-start">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#8e44ad] mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span class="text-neutral-600">Catering facilities for meals, coffee breaks and reception</span>
+                </li>
+                <li class="flex items-start">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#8e44ad] mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span class="text-neutral-600">Fully accessible facilities</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- Map and image -->
+          <div class="space-y-8">
+            <!-- Map (placeholder since we can't include actual Google Maps without an API key) -->
+            <div class="rounded-xl overflow-hidden shadow-lg h-80 relative bg-gray-200">
+              <div class="absolute inset-0 flex items-center justify-center">
+                <div class="text-center p-8">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto text-[#8e44ad] opacity-50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path>
+                  </svg>
+                  <p class="mt-4 text-neutral-600 font-medium">Interactive Map</p>
+                  <p class="text-sm text-neutral-500">Google Maps integration available on the live site</p>
+                  <button class="mt-4 px-4 py-2 bg-[#8e44ad] hover:bg-[#7d3b98] text-white rounded-lg transition-colors duration-300 shadow-md">
+                    Get Directions
+                  </button>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Transportation options -->
+            <div class="bg-white dark:bg-white shadow-md rounded-xl p-8">
+              <h3 class="text-xl font-bold mb-4 text-neutral-800 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-[#e74c3c]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0"></path>
+                </svg>
+                Transportation
+              </h3>
+              
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="bg-gray-50 dark:bg-gray-50 p-4 rounded-lg">
+                  <h4 class="font-semibold text-neutral-800 mb-2">From the Airport</h4>
+                  <p class="text-sm text-neutral-600">San Francisco International Airport (SFO) is approximately 13 miles from the venue. Travel time is about 25-30 minutes by taxi/ride-share.</p>
+                </div>
+                
+                <div class="bg-gray-50 dark:bg-gray-50 p-4 rounded-lg">
+                  <h4 class="font-semibold text-neutral-800 mb-2">Public Transportation</h4>
+                  <p class="text-sm text-neutral-600">The venue is accessible via BART and MUNI. Powell Street Station is a 10-minute walk from the convention center.</p>
+                </div>
+                
+                <div class="bg-gray-50 dark:bg-gray-50 p-4 rounded-lg">
+                  <h4 class="font-semibold text-neutral-800 mb-2">Parking</h4>
+                  <p class="text-sm text-neutral-600">Paid parking is available at the venue garage. Early arrival is recommended as spaces fill quickly.</p>
+                </div>
+                
+                <div class="bg-gray-50 dark:bg-gray-50 p-4 rounded-lg">
+                  <h4 class="font-semibold text-neutral-800 mb-2">Ride Sharing</h4>
+                  <p class="text-sm text-neutral-600">Uber and Lyft are widely available throughout San Francisco with designated pickup/dropoff areas.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+  
+        <!-- Additional information -->
+        <div class="mt-12 text-center">
+          <!-- <p class="text-neutral-600 max-w-3xl mx-auto">
+            Special conference rates are available at all partner hotels when booking with the code <span class="font-semibold text-[#8e44ad]">WOMENOPTICS2023</span>. Reservations must be made by August 15, 2023 to guarantee availability.
+          </p> -->
+          <!-- <a href="#" class="inline-block mt-6 px-6 py-3 bg-[#8e44ad] hover:bg-[#7d3b98] text-white font-semibold rounded-lg transition-colors duration-300 shadow-md">
+            View All Accommodation Options
+          </a> -->
+        </div>
+      </div>
+    </section>
+  </div>
+</section>
+
+
+<section id="section-8fa71182-e163-4db0-a72e-f50aa93650d4">
+<div id="root">
+<section id="sponsors" class="py-20 bg-white dark:bg-neutral-100">
+<div class="container mx-auto px-4">
+<!-- Section header -->
+<div class="text-center mb-16">
+  <h2 class="text-3xl md:text-4xl font-bold mb-4 text-neutral-800 dark:text-neutral-800">
+    Our <span class="text-[#8e44ad]">Sponsors</span> &amp; Partners
+  </h2>
+  <div class="w-20 h-1 bg-[#e74c3c] mx-auto mb-6"></div>
+  <p class="text-lg text-neutral-600 dark:text-neutral-600 max-w-3xl mx-auto">
+    We are grateful for the support of these organizations that make the Women in Optics &amp; Photonics Conference possible.
+  </p>
+</div>
+
+<!-- Platinum Sponsors -->
+<div class="mb-16">
+  <h3 class="text-xl font-bold text-center mb-8 text-neutral-800 dark:text-neutral-800">
+    <span class="inline-block px-6 py-2 bg-gradient-to-r from-gray-300 to-gray-100 dark:from-gray-400 dark:to-gray-200 rounded-full">
+      Platinum Sponsors
+    </span>
+  </h3>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <!-- Sponsor 1 -->
+    <div class="bg-white dark:bg-white rounded-xl shadow-md p-8 flex flex-col items-center justify-center transition-transform duration-300 transform hover:scale-105 hover:shadow-lg">
+      <div class="h-24 w-24 bg-[#8e44ad] rounded-full flex items-center justify-center text-white text-4xl font-bold mb-4">
+        OS
+      </div>
+      <h4 class="text-xl font-bold text-center text-neutral-800">Optical Sciences Corp</h4>
+      <p class="text-sm text-center text-neutral-600 mt-2">Global leader in optical technology innovation</p>
+      <div class="mt-4 flex justify-center">
+        <a href="#" class="text-sm text-[#3498db] hover:text-[#2980b9] font-medium">Visit website</a>
+      </div>
+    </div>
+    
+    <!-- Sponsor 2 -->
+    <div class="bg-white dark:bg-white rounded-xl shadow-md p-8 flex flex-col items-center justify-center transition-transform duration-300 transform hover:scale-105 hover:shadow-lg">
+      <div class="h-24 w-24 bg-[#e74c3c] rounded-full flex items-center justify-center text-white text-4xl font-bold mb-4">
+        PL
+      </div>
+      <h4 class="text-xl font-bold text-center text-neutral-800">Photonics Lab</h4>
+      <p class="text-sm text-center text-neutral-600 mt-2">Pioneering research in quantum photonics</p>
+      <div class="mt-4 flex justify-center">
+        <a href="#" class="text-sm text-[#3498db] hover:text-[#2980b9] font-medium">Visit website</a>
+      </div>
+    </div>
+    
+    <!-- Sponsor 3 -->
+    <div class="bg-white dark:bg-white rounded-xl shadow-md p-8 flex flex-col items-center justify-center transition-transform duration-300 transform hover:scale-105 hover:shadow-lg">
+      <div class="h-24 w-24 bg-[#3498db] rounded-full flex items-center justify-center text-white text-4xl font-bold mb-4">
+        LT
+      </div>
+      <h4 class="text-xl font-bold text-center text-neutral-800">LaserTech Industries</h4>
+      <p class="text-sm text-center text-neutral-600 mt-2">Advanced laser and photonic solutions</p>
+      <div class="mt-4 flex justify-center">
+        <a href="#" class="text-sm text-[#3498db] hover:text-[#2980b9] font-medium">Visit website</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Gold Sponsors -->
+<div class="mb-16">
+  <h3 class="text-xl font-bold text-center mb-8 text-neutral-800 dark:text-neutral-800">
+    <span class="inline-block px-6 py-2 bg-gradient-to-r from-yellow-300 to-yellow-100 dark:from-yellow-400 dark:to-yellow-200 rounded-full">
+      Gold Sponsors
+    </span>
+  </h3>
+  <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    <!-- Gold Sponsor 1 -->
+    <div class="bg-white dark:bg-white rounded-xl shadow-md p-6 flex flex-col items-center justify-center transition-transform duration-300 transform hover:scale-105 hover:shadow-lg">
+      <div class="h-16 w-16 bg-[#f39c12] rounded-full flex items-center justify-center text-white text-2xl font-bold mb-3">
+        QO
+      </div>
+      <h4 class="font-bold text-center text-neutral-800">Quantum Optics</h4>
+      <p class="text-xs text-center text-neutral-600 mt-1">Quantum computing solutions</p>
+    </div>
+    
+    <!-- Gold Sponsor 2 -->
+    <div class="bg-white dark:bg-white rounded-xl shadow-md p-6 flex flex-col items-center justify-center transition-transform duration-300 transform hover:scale-105 hover:shadow-lg">
+      <div class="h-16 w-16 bg-[#f39c12] rounded-full flex items-center justify-center text-white text-2xl font-bold mb-3">
+        OP
+      </div>
+      <h4 class="font-bold text-center text-neutral-800">OpticsPlus</h4>
+      <p class="text-xs text-center text-neutral-600 mt-1">Advanced optical equipment</p>
+    </div>
+    
+    <!-- Gold Sponsor 3 -->
+    <div class="bg-white dark:bg-white rounded-xl shadow-md p-6 flex flex-col items-center justify-center transition-transform duration-300 transform hover:scale-105 hover:shadow-lg">
+      <div class="h-16 w-16 bg-[#f39c12] rounded-full flex items-center justify-center text-white text-2xl font-bold mb-3">
+        SP
+      </div>
+      <h4 class="font-bold text-center text-neutral-800">SpectraTech</h4>
+      <p class="text-xs text-center text-neutral-600 mt-1">Spectroscopy instruments</p>
+    </div>
+    
+    <!-- Gold Sponsor 4 -->
+    <div class="bg-white dark:bg-white rounded-xl shadow-md p-6 flex flex-col items-center justify-center transition-transform duration-300 transform hover:scale-105 hover:shadow-lg">
+      <div class="h-16 w-16 bg-[#f39c12] rounded-full flex items-center justify-center text-white text-2xl font-bold mb-3">
+        BT
+      </div>
+      <h4 class="font-bold text-center text-neutral-800">BioTech Optics</h4>
+      <p class="text-xs text-center text-neutral-600 mt-1">Medical imaging solutions</p>
+    </div>
+  </div>
+</div>
+
+<!-- Silver Sponsors -->
+<div class="mb-16">
+  <h3 class="text-xl font-bold text-center mb-8 text-neutral-800 dark:text-neutral-800">
+    <span class="inline-block px-6 py-2 bg-gradient-to-r from-gray-400 to-gray-200 dark:from-gray-500 dark:to-gray-300 rounded-full">
+      Silver Sponsors
+    </span>
+  </h3>
+  <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+    <!-- Silver sponsors (6) -->
+    <div class="bg-white dark:bg-white rounded-lg shadow-sm p-4 flex flex-col items-center justify-center transition-transform duration-300 transform hover:scale-105">
+      <div class="h-12 w-12 bg-neutral-400 rounded-full flex items-center justify-center text-white text-xl font-bold mb-2">NS</div>
+      <h5 class="font-semibold text-center text-sm text-neutral-800">NanoSystems</h5>
+    </div>
+    
+    <div class="bg-white dark:bg-white rounded-lg shadow-sm p-4 flex flex-col items-center justify-center transition-transform duration-300 transform hover:scale-105">
+      <div class="h-12 w-12 bg-neutral-400 rounded-full flex items-center justify-center text-white text-xl font-bold mb-2">FO</div>
+      <h5 class="font-semibold text-center text-sm text-neutral-800">FiberOptics Co</h5>
+    </div>
+    
+    <div class="bg-white dark:bg-white rounded-lg shadow-sm p-4 flex flex-col items-center justify-center transition-transform duration-300 transform hover:scale-105">
+      <div class="h-12 w-12 bg-neutral-400 rounded-full flex items-center justify-center text-white text-xl font-bold mb-2">IM</div>
+      <h5 class="font-semibold text-center text-sm text-neutral-800">Imaging Tech</h5>
+    </div>
+    
+    <div class="bg-white dark:bg-white rounded-lg shadow-sm p-4 flex flex-col items-center justify-center transition-transform duration-300 transform hover:scale-105">
+      <div class="h-12 w-12 bg-neutral-400 rounded-full flex items-center justify-center text-white text-xl font-bold mb-2">LL</div>
+      <h5 class="font-semibold text-center text-sm text-neutral-800">Laser Labs</h5>
+    </div>
+    
+    <div class="bg-white dark:bg-white rounded-lg shadow-sm p-4 flex flex-col items-center justify-center transition-transform duration-300 transform hover:scale-105">
+      <div class="h-12 w-12 bg-neutral-400 rounded-full flex items-center justify-center text-white text-xl font-bold mb-2">OC</div>
+      <h5 class="font-semibold text-center text-sm text-neutral-800">OpticalComp</h5>
+    </div>
+    
+    <div class="bg-white dark:bg-white rounded-lg shadow-sm p-4 flex flex-col items-center justify-center transition-transform duration-300 transform hover:scale-105">
+      <div class="h-12 w-12 bg-neutral-400 rounded-full flex items-center justify-center text-white text-xl font-bold mb-2">PS</div>
+      <h5 class="font-semibold text-center text-sm text-neutral-800">PhotonSense</h5>
+    </div>
+  </div>
+</div>
+
+<!-- Academic Partners -->
+<div class="mb-16">
+  <h3 class="text-xl font-bold text-center mb-8 text-neutral-800 dark:text-neutral-800">
+    <span class="inline-block px-6 py-2 bg-gradient-to-r from-blue-100 to-purple-100 dark:from-blue-200 dark:to-purple-200 rounded-full">
+      Academic Partners
+    </span>
+  </h3>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <!-- Academic Partner 1 -->
+    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-100 dark:to-indigo-100 rounded-xl shadow-md p-6 flex flex-col items-center justify-center transition-transform duration-300 transform hover:scale-105">
+      <div class="h-20 w-20 bg-[#8e44ad] rounded-full flex items-center justify-center text-white text-3xl font-bold mb-4">
+        MIT
+      </div>
+      <h4 class="text-lg font-bold text-center text-neutral-800">Massachusetts Institute of Technology</h4>
+      <p class="text-sm text-center text-neutral-600 mt-2">Department of Electrical Engineering &amp; Computer Science</p>
+    </div>
+    
+    <!-- Academic Partner 2 -->
+    <div class="bg-gradient-to-r from-red-50 to-pink-50 dark:from-red-100 dark:to-pink-100 rounded-xl shadow-md p-6 flex flex-col items-center justify-center transition-transform duration-300 transform hover:scale-105">
+      <div class="h-20 w-20 bg-[#e74c3c] rounded-full flex items-center justify-center text-white text-3xl font-bold mb-4">
+        SU
+      </div>
+      <h4 class="text-lg font-bold text-center text-neutral-800">Stanford University</h4>
+      <p class="text-sm text-center text-neutral-600 mt-2">Department of Applied Physics</p>
+    </div>
+    
+    <!-- Academic Partner 3 -->
+    <div class="bg-gradient-to-r from-green-50 to-teal-50 dark:from-green-100 dark:to-teal-100 rounded-xl shadow-md p-6 flex flex-col items-center justify-center transition-transform duration-300 transform hover:scale-105">
+      <div class="h-20 w-20 bg-[#3498db] rounded-full flex items-center justify-center text-white text-3xl font-bold mb-4">
+        UCB
+      </div>
+      <h4 class="text-lg font-bold text-center text-neutral-800">UC Berkeley</h4>
+      <p class="text-sm text-center text-neutral-600 mt-2">College of Engineering</p>
+    </div>
+  </div>
+</div>
+
+<!-- Association Partners -->
+<div class="mb-16">
+  <h3 class="text-xl font-bold text-center mb-8 text-neutral-800 dark:text-neutral-800">
+    <span class="inline-block px-6 py-2 bg-gradient-to-r from-purple-100 to-pink-100 dark:from-purple-200 dark:to-pink-200 rounded-full">
+      Association Partners
+    </span>
+  </h3>
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+    <!-- Association 1 -->
+    <div class="bg-white dark:bg-white rounded-lg shadow-md p-5 flex flex-col items-center justify-center transition-transform duration-300 transform hover:scale-105">
+      <div class="h-14 w-14 bg-[#8e44ad] rounded-full flex items-center justify-center text-white text-xl font-bold mb-3">
+        OSA
+      </div>
+      <h5 class="font-semibold text-center text-neutral-800">Optical Society of America</h5>
+    </div>
+    
+    <!-- Association 2 -->
+    <div class="bg-white dark:bg-white rounded-lg shadow-md p-5 flex flex-col items-center justify-center transition-transform duration-300 transform hover:scale-105">
+      <div class="h-14 w-14 bg-[#e74c3c] rounded-full flex items-center justify-center text-white text-xl font-bold mb-3">
+        SPIE
+      </div>
+      <h5 class="font-semibold text-center text-neutral-800">Int'l Society for Optics and Photonics</h5>
+    </div>
+    
+    <!-- Association 3 -->
+    <div class="bg-white dark:bg-white rounded-lg shadow-md p-5 flex flex-col items-center justify-center transition-transform duration-300 transform hover:scale-105">
+      <div class="h-14 w-14 bg-[#3498db] rounded-full flex items-center justify-center text-white text-xl font-bold mb-3">
+        IEEE
+      </div>
+      <h5 class="font-semibold text-center text-neutral-800">IEEE Photonics Society</h5>
+    </div>
+    
+    <!-- Association 4 -->
+    <div class="bg-white dark:bg-white rounded-lg shadow-md p-5 flex flex-col items-center justify-center transition-transform duration-300 transform hover:scale-105">
+      <div class="h-14 w-14 bg-[#2ecc71] rounded-full flex items-center justify-center text-white text-xl font-bold mb-3">
+        WIS
+      </div>
+      <h5 class="font-semibold text-center text-neutral-800">Women in Science Association</h5>
+    </div>
+  </div>
+</div>
+
+<!-- Sponsorship opportunities -->
+<!-- 
+<div class="bg-gradient-to-r from-[#8e44ad]/10 to-[#3498db]/10 dark:from-[#8e44ad]/20 dark:to-[#3498db]/20 rounded-xl p-8 mb-10">
+  <div class="max-w-4xl mx-auto">
+    <h3 class="text-2xl font-bold text-center mb-6 text-neutral-800 dark:text-neutral-800">Become a Sponsor</h3>
+    <p class="text-center text-neutral-600 dark:text-neutral-600 mb-8">
+      Join these leading organizations in supporting the advancement of women in optics and photonics. Various sponsorship packages are available to suit your organization's goals.
+    </p>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      
+      <div class="bg-white dark:bg-white rounded-lg p-5 shadow-md text-center">
+        <div class="inline-block bg-gradient-to-r from-gray-300 to-gray-100 dark:from-gray-400 dark:to-gray-200 rounded-full px-4 py-1 mb-3">
+          <span class="font-semibold text-neutral-800">Platinum</span>
+        </div>
+        <h4 class="text-lg font-bold text-neutral-800 mb-1">$10,000</h4>
+        <p class="text-sm text-neutral-600 mb-4">Premium branding & speaking opportunity</p>
+        <ul class="text-xs text-left text-neutral-600 space-y-1 mb-4">
+          <li class="flex items-center">
+            <svg class="w-3 h-3 text-[#8e44ad] mr-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+            Main stage keynote opportunity
+          </li>
+          <li class="flex items-center">
+            <svg class="w-3 h-3 text-[#8e44ad] mr-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+            Prime logo placement
+          </li>
+          <li class="flex items-center">
+            <svg class="w-3 h-3 text-[#8e44ad] mr-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+            5 full conference passes
+          </li>
+        </ul>
+      </div>
+      
+      <div class="text-center mt-8">
+        <a href="#" class="inline-flex items-center px-6 py-3 bg-[#8e44ad] hover:bg-[#7d3b98] text-white font-semibold rounded-lg transition-colors duration-300 shadow-md">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clip-rule="evenodd"></path>
+          </svg>
+          Request Sponsorship Information
+        </a>
+      </div>
+  </div>
+</div>
+-->
+
+
+<!-- Sponsor testimonial -->
+<!-- <div class="max-w-3xl mx-auto text-center">
+  <svg class="w-12 h-12 mx-auto mb-4 text-[#8e44ad] opacity-30" fill="currentColor" viewBox="0 0 24 24">
+    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"></path>
+  </svg>
+  <blockquote class="text-xl italic font-medium text-neutral-600 dark:text-neutral-600 mb-6">
+    "Supporting the Women in Optics &amp; Photonics Conference has been incredibly rewarding for our organization. We've connected with brilliant researchers and students while contributing to greater diversity in our field."
+  </blockquote>
+  <div class="flex items-center justify-center">
+    <div class="h-12 w-12 bg-[#8e44ad] rounded-full flex items-center justify-center text-white text-xl font-bold">
+      LT
+    </div>
+    <div class="ml-4 text-left">
+      <p class="font-semibold text-neutral-800 dark:text-neutral-800">Dr. Jennifer Martinez</p>
+      <p class="text-sm text-neutral-600 dark:text-neutral-600">Chief Technology Officer, LaserTech Industries</p>
+    </div>
+  </div>
+</div> -->
+</div>
+</section>
+</div>
+</section>
+<div id="c5823e6e-ad10-4196-8baa-3741adb50942" data-section_id="c5823e6e-ad10-4196-8baa-3741adb50942" class="page_sectionHighlight__ahPeD sectionCode">
+                
+  <section id="section-c5823e6e-ad10-4196-8baa-3741adb50942">
+<div id="root">
+<section id="speakers" class="py-20 bg-neutral-800 text-white">
+<div class="container mx-auto px-4" id="el-26molxvk">
+<!-- Section header -->
+<div class="text-center mb-16" id="el-vy1w8xeh">
+<h2 class="text-3xl md:text-4xl font-bold mb-4" id="el-tx0bxso4">
+Our <span class="text-[#e74c3c]" id="el-7muir5ks">Team</span>
+</h2>
+<div class="w-20 h-1 bg-[#8e44ad] mx-auto mb-6" id="el-ubtekxe9"></div>
+<p class="text-lg text-gray-300 max-w-3xl mx-auto" id="el-lk242xdy">
+Meet the dedicated professors from our college who are leading the way in optics and photonics research and education.
+</p>
+</div>
+
+<!-- Team members grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="el-4drq2wxu">
+  <!-- Professor 1 -->
+<div class="bg-neutral-700 rounded-xl overflow-hidden shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl group" id="el-w9lngkba">
+  <div class="h-64 bg-gradient-to-r from-[#3498db] to-[#2ecc71] relative overflow-hidden" id="el-d684zidw">
+    <div class="absolute inset-0 flex items-center justify-center" id="el-fwpk9hno">
+      <div class="w-36 h-36 rounded-full bg-neutral-800 flex items-center justify-center overflow-hidden" id="el-6ar6gcww">
+        <img src="images/ProfNeenaGupta.jpg" alt="Profile Picture" 
+             class="w-full h-full object-cover object-top">
+      </div>
+    </div>
+  </div>
+<div class="p-6" id="el-rwa04zzs">
+<h3 class="text-xl font-bold mb-1 group-hover:text-[#e74c3c] transition-colors duration-300" id="el-5s95vmpo">Prof. Neena Gupta</h3>
+<p class="text-[#8e44ad] font-medium mb-3" id="el-05mnm4r5">Professor </p>
+<p class="text-gray-300 mb-4 text-sm" id="el-mt9qdr49">
+  Research Interests: Communication Engg, Optical Communication, wireless Communication
+</p>
+<div class="flex justify-between items-center" id="el-e6ri5jzl">
+<span class="text-xs text-gray-400" id="el-rcs93abl">Ph.D., Caltech</span>
+<div class="flex space-x-2" id="el-p5ch6qd7">
+<a href="#" class="text-gray-400 hover:text-white transition-colors duration-300" id="el-ydy6uloo">
+  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" id="el-oa08jkst">
+    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" id="el-qouqvxx2"></path>
+  </svg>
+</a>
+<a href="#" class="text-gray-400 hover:text-white transition-colors duration-300" id="el-fllmt2q0">
+  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" id="el-adcouzjx">
+    <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z" id="el-jknhqtzh"></path>
+  </svg>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Professor 2 -->
+<div class="bg-neutral-700 rounded-xl overflow-hidden shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl group" id="el-q1w0zm2z">
+  <div class="h-64 bg-gradient-to-r from-[#3498db] to-[#2ecc71] relative overflow-hidden" id="el-d684zidw">
+    <div class="absolute inset-0 flex items-center justify-center" id="el-fwpk9hno">
+      <div class="w-36 h-36 rounded-full bg-neutral-800 flex items-center justify-center overflow-hidden" id="el-6ar6gcww">
+        <img src="images/ProfJyotiKedia.jpg" alt="Profile Picture" 
+             class="w-full h-full object-cover object-top">
+      </div>
+    </div>
+  </div>
+  
+<div class="p-6" id="el-80uvaacm">
+<h3 class="text-xl font-bold mb-1 group-hover:text-[#e74c3c] transition-colors duration-300" id="el-4k8nby5k">Prof. Jyoti Kedia</h3>
+<p class="text-[#8e44ad] font-medium mb-3" id="el-5b0ugzo0">Associate Professor</p>
+<p class="text-gray-300 mb-4 text-sm" id="el-9dce5t9l">
+  Research Interests: Photonic Integrated Circuit design, VLSI Design, IoT, Embedded Systems
+</p>
+<div class="flex justify-between items-center" id="el-8qu0o5x8">
+<!-- <span class="text-xs text-gray-400" id="el-f52x6fnm">Ph.D., MIT</span> -->
+<div class="flex space-x-2" id="el-2go9vcqk">
+<a href="https://www.linkedin.com/in/jyoti-kedia-a995162b/" target="_blank" class="text-gray-400 hover:text-white transition-colors duration-300" id="el-hmwr9rxr">
+  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" id="el-h4kx39f7">
+    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" id="el-nqc9qynq"></path>
+  </svg>
+</a>
+<!-- <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300" id="el-tadi0e4s">
+  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" id="el-nt5kow7w">
+    <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z" id="el-7fu05s83"></path>
+  </svg>
+</a> -->
+</div>
+</div>
+</div>
+</div>
+
+<!-- Professor 3 -->
+<div class="bg-neutral-700 rounded-xl overflow-hidden shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl group" id="el-cd6xb3mm">
+  <div class="h-64 bg-gradient-to-r from-[#3498db] to-[#2ecc71] relative overflow-hidden" id="el-d684zidw">
+    <div class="absolute inset-0 flex items-center justify-center" id="el-fwpk9hno">
+      <div class="w-36 h-36 rounded-full bg-neutral-800 flex items-center justify-center overflow-hidden" id="el-6ar6gcww">
+        <img src="images/ProfDivyaDhawan.jpg" alt="Profile Picture" 
+             class="w-full h-full object-cover object-top">
+      </div>
+    </div>
+  </div>
+<div class="p-6" id="el-lkf28bua">
+<h3 class="text-xl font-bold mb-1 group-hover:text-[#e74c3c] transition-colors duration-300" id="el-rxws0ac2">Prof. Divya Dhawan</h3>
+<p class="text-[#8e44ad] font-medium mb-3" id="el-go5avuix">Associate Professor</p>
+<p class="text-gray-300 mb-4 text-sm" id="el-moeekhba">
+  Research Interests: Optical Communication,Photonics Systems
+</p>
+<div class="flex justify-between items-center" id="el-v2h9x7jr">
+<!-- <span class="text-xs text-gray-400" id="el-ksdzq6kc">Ph.D., Stanford</span> -->
+<div class="flex space-x-2" id="el-9ly7w7gx">
+<a href="https://www.linkedin.com/in/divya-dhawan-60a38256/" target="_blank" class="text-gray-400 hover:text-white transition-colors duration-300" id="el-ydh6a7cs">
+  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" id="el-toklb9u5">
+    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" id="el-3m42m6in"></path>
+  </svg>
+</a>
+<!-- <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300" id="el-fc1b9aug"> -->
+  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" id="el-ta5wtw2c">
+    <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z" id="el-nhyb69l4"></path>
+  </svg>
+</a>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<!-- Professor 4 -->
+<!-- <div class="bg-neutral-700 rounded-xl overflow-hidden shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl group" id="el-txm4spph">
+<div class="h-64 bg-gradient-to-r from-[#1abc9c] to-[#16a085] relative overflow-hidden" id="el-fnhoibna">
+<div class="absolute inset-0 flex items-center justify-center" id="el-eynmqeis">
+<div class="w-28 h-28 rounded-full bg-neutral-800 flex items-center justify-center" id="el-s6m41tu4">
+<span class="text-4xl font-bold text-white" id="el-ehagjem5">AP</span>
+</div>
+</div>
+</div>
+<div class="p-6" id="el-9w3sief7">
+<h3 class="text-xl font-bold mb-1 group-hover:text-[#e74c3c] transition-colors duration-300" id="el-3i9zml5f">Prof. Aisha Patel</h3>
+<p class="text-[#8e44ad] font-medium mb-3" id="el-ouzet4ua">Associate Professor • Biophotonics</p>
+<p class="text-gray-300 mb-4 text-sm" id="el-cnervia6">
+Pioneering optical techniques for biomedical imaging and early disease detection.
+</p>
+<div class="flex justify-between items-center" id="el-msy2gj68">
+<span class="text-xs text-gray-400" id="el-fhc0l5le">Ph.D., UC Berkeley</span>
+<div class="flex space-x-2" id="el-tui41tfc">
+<a href="#" class="text-gray-400 hover:text-white transition-colors duration-300" id="el-41k0hrrc">
+  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" id="el-s9lc1n3e">
+    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" id="el-ualj5rs6"></path>
+  </svg>
+</a>
+<a href="#" class="text-gray-400 hover:text-white transition-colors duration-300" id="el-bagtelo1">
+  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" id="el-tk4uqqd9">
+    <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z" id="el-sfs15523"></path>
+  </svg>
+</a>
+</div>
+</div>
+</div>
+</div> -->
+</div>
+
+<!-- Contact button -->
+<!-- <div class="text-center mt-12" id="el-x0fs5wbn">
+<button class="bg-transparent hover:bg-[#8e44ad] text-white font-semibold hover:text-white py-3 px-8 border border-[#8e44ad] hover:border-transparent rounded-full transition-colors duration-300" id="el-lm0s78va">
+Contact Our Team
+</button>
+</div> -->
+</div>
+</section>
+
+<script>
+// Alpine.js initialization for tabs
+document.addEventListener('alpine:init', () => {
+Alpine.data('speakersData', () => ({
+activeTab: 'keynote',
+setActiveTab(tab) {
+this.activeTab = tab;
+}
+}))
+});
+
+// Fallback for non-Alpine implementation
+document.addEventListener('DOMContentLoaded', function() {
+if (typeof Alpine === 'undefined') {
+const tabButtons = document.querySelectorAll('[x-data] button');
+const tabPanels = document.querySelectorAll('[x-show]');
+
+// Initially show only keynote speakers
+tabPanels.forEach(panel => {
+if (panel.getAttribute('x-show') === "activeTab === 'keynote'") {
+panel.classList.remove('hidden');
+} else {
+panel.classList.add('hidden');
+}
+});
+
+// Handle tab switching
+tabButtons.forEach(button => {
+button.addEventListener('click', function() {
+const targetTab = this.getAttribute('@click').split("'")[1];
+
+// Update button styles
+tabButtons.forEach(btn => {
+if (btn.getAttribute('@click').includes(targetTab)) {
+  btn.classList.add('bg-[#8e44ad]', 'border-[#8e44ad]');
+  btn.classList.remove('bg-transparent', 'border-gray-600', 'hover:border-gray-400');
+} else {
+  btn.classList.remove('bg-[#8e44ad]', 'border-[#8e44ad]');
+  btn.classList.add('bg-transparent', 'border-gray-600', 'hover:border-gray-400');
+}
+});
+
+// Show/hide content
+tabPanels.forEach(panel => {
+if (panel.getAttribute('x-show').includes(targetTab)) {
+  panel.classList.remove('hidden');
+} else {
+  panel.classList.add('hidden');
+}
+});
+});
+});
+}
+});
+</script>
+</div>
+</section>
+
+</div>
+<section id="section-7bd99a35-1a55-43de-b788-180f6230e4f5">
+<div id="root">
+<section id="faq" class="py-20 bg-white dark:bg-neutral-100">
+<div class="container mx-auto px-4">
+<!-- Section header -->
+<div class="text-center mb-16">
+  <h2 class="text-3xl md:text-4xl font-bold mb-4 text-neutral-800 dark:text-neutral-800">
+    Frequently Asked <span class="text-[#8e44ad]">Questions</span>
+  </h2>
+  <div class="w-20 h-1 bg-[#e74c3c] mx-auto mb-6"></div>
+  <p class="text-lg text-neutral-600 dark:text-neutral-600 max-w-3xl mx-auto">
+    Find answers to common questions about the Women in Optics &amp; Photonics Conference 2023.
+  </p>
+</div>
+
+<!-- FAQ grid sections -->
+<div class="max-w-5xl mx-auto">
+  <!-- FAQ categories tabs -->
+  <div class="flex flex-wrap justify-center mb-10" x-data="{ activeCategory: 'registration' }">
+    <button @click="activeCategory = 'registration'" :class="{ 'bg-[#8e44ad] text-white': activeCategory === 'registration', 'bg-gray-100 text-gray-800 hover:bg-gray-200': activeCategory !== 'registration' }" class="px-4 py-2 rounded-md font-medium m-1 transition-colors duration-300 focus:outline-none">
+      Registration
+    </button>
+    <button @click="activeCategory = 'program'" :class="{ 'bg-[#8e44ad] text-white': activeCategory === 'program', 'bg-gray-100 text-gray-800 hover:bg-gray-200': activeCategory !== 'program' }" class="px-4 py-2 rounded-md font-medium m-1 transition-colors duration-300 focus:outline-none">
+      Program &amp; Schedule
+    </button>
+    <button @click="activeCategory = 'venue'" :class="{ 'bg-[#8e44ad] text-white': activeCategory === 'venue', 'bg-gray-100 text-gray-800 hover:bg-gray-200': activeCategory !== 'venue' }" class="px-4 py-2 rounded-md font-medium m-1 transition-colors duration-300 focus:outline-none">
+      Venue &amp; Travel
+    </button>
+    <button @click="activeCategory = 'other'" :class="{ 'bg-[#8e44ad] text-white': activeCategory === 'other', 'bg-gray-100 text-gray-800 hover:bg-gray-200': activeCategory !== 'other' }" class="px-4 py-2 rounded-md font-medium m-1 transition-colors duration-300 focus:outline-none">
+      Other Questions
+    </button>
+  </div>
+
+  <!-- Registration Questions -->
+  <div x-show="activeCategory === 'registration'" class="space-y-6" x-data="{selected:null}">
+    <!-- Question 1 -->
+    <div class="border border-gray-200 dark:border-gray-300 rounded-lg shadow-sm">
+      <button @click="selected !== 1 ? selected = 1 : selected = null" class="flex justify-between items-center w-full px-6 py-4 text-left" :class="{'text-[#8e44ad] font-semibold': selected == 1}">
+        <span class="text-lg">How do I register for the conference?</span>
+        <svg class="w-5 h-5 transform transition-transform duration-300" :class="{'rotate-180': selected == 1}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </button>
+      <div x-show="selected == 1" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform scale-95" x-transition:enter-end="opacity-100 transform scale-100" class="px-6 pb-4 text-neutral-600">
+        <p>You can register through our online registration portal on the <a href="#registration" class="text-[#3498db] hover:underline">Registration page</a>. Early bird registration is available until August 15, 2023, offering a discounted rate. Complete the registration form and follow the instructions for payment to secure your spot.</p>
+      </div>
+    </div>
+    
+    <!-- Question 2 -->
+    <div class="border border-gray-200 dark:border-gray-300 rounded-lg shadow-sm">
+      <button @click="selected !== 2 ? selected = 2 : selected = null" class="flex justify-between items-center w-full px-6 py-4 text-left" :class="{'text-[#8e44ad] font-semibold': selected == 2}">
+        <span class="text-lg">What is included in the registration fee?</span>
+        <svg class="w-5 h-5 transform transition-transform duration-300" :class="{'rotate-180': selected == 2}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </button>
+      <div x-show="selected == 2" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform scale-95" x-transition:enter-end="opacity-100 transform scale-100" class="px-6 pb-4 text-neutral-600">
+        <p>Registration includes full access to all conference sessions, workshops, and networking events over the three-day period. You'll also receive conference materials, access to the exhibition area, coffee breaks, and lunches each day. The welcome reception and networking dinners are also included in your registration.</p>
+      </div>
+    </div>
+    
+    <!-- Question 3 -->
+    <div class="border border-gray-200 dark:border-gray-300 rounded-lg shadow-sm">
+      <button @click="selected !== 3 ? selected = 3 : selected = null" class="flex justify-between items-center w-full px-6 py-4 text-left" :class="{'text-[#8e44ad] font-semibold': selected == 3}">
+        <span class="text-lg">Is there a discount for students or academic attendees?</span>
+        <svg class="w-5 h-5 transform transition-transform duration-300" :class="{'rotate-180': selected == 3}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </button>
+      <div x-show="selected == 3" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform scale-95" x-transition:enter-end="opacity-100 transform scale-100" class="px-6 pb-4 text-neutral-600">
+        <p>Yes, we offer a special student rate of $199 for full-time students. You'll need to provide a valid student ID during registration. Additionally, we offer group discounts for 3 or more attendees from the same institution or organization. Please contact us at <span class="text-[#8e44ad] font-medium">registration@womenoptics2023.com</span> for more information about group rates.</p>
+      </div>
+    </div>
+    
+    <!-- Question 4 -->
+    <div class="border border-gray-200 dark:border-gray-300 rounded-lg shadow-sm">
+      <button @click="selected !== 4 ? selected = 4 : selected = null" class="flex justify-between items-center w-full px-6 py-4 text-left" :class="{'text-[#8e44ad] font-semibold': selected == 4}">
+        <span class="text-lg">What is your cancellation policy?</span>
+        <svg class="w-5 h-5 transform transition-transform duration-300" :class="{'rotate-180': selected == 4}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </button>
+      <div x-show="selected == 4" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform scale-95" x-transition:enter-end="opacity-100 transform scale-100" class="px-6 pb-4 text-neutral-600">
+        <p>We offer full refunds for cancellations made before August 1, 2023. Cancellations between August 1 and September 1 will receive a 50% refund. Unfortunately, no refunds are available for cancellations after September 1, 2023. However, registration can be transferred to another attendee at no additional cost by contacting our registration team.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Program Questions -->
+  <div x-show="activeCategory === 'program'" class="space-y-6 hidden" x-data="{selected:null}">
+    <!-- Question 1 -->
+    <div class="border border-gray-200 dark:border-gray-300 rounded-lg shadow-sm">
+      <button @click="selected !== 1 ? selected = 1 : selected = null" class="flex justify-between items-center w-full px-6 py-4 text-left" :class="{'text-[#8e44ad] font-semibold': selected == 1}">
+        <span class="text-lg">What types of sessions will be offered at the conference?</span>
+        <svg class="w-5 h-5 transform transition-transform duration-300" :class="{'rotate-180': selected == 1}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </button>
+      <div x-show="selected == 1" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform scale-95" x-transition:enter-end="opacity-100 transform scale-100" class="px-6 pb-4 text-neutral-600">
+        <p>The conference features a diverse range of sessions including keynote presentations from industry leaders, technical sessions covering the latest research, interactive workshops, panel discussions on career development and women in STEM, and poster sessions. We also have networking events and social activities throughout the three days.</p>
+      </div>
+    </div>
+    
+    <!-- Question 2 -->
+    <div class="border border-gray-200 dark:border-gray-300 rounded-lg shadow-sm">
+      <button @click="selected !== 2 ? selected = 2 : selected = null" class="flex justify-between items-center w-full px-6 py-4 text-left" :class="{'text-[#8e44ad] font-semibold': selected == 2}">
+        <span class="text-lg">Can I present my research at the conference?</span>
+        <svg class="w-5 h-5 transform transition-transform duration-300" :class="{'rotate-180': selected == 2}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </button>
+      <div x-show="selected == 2" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform scale-95" x-transition:enter-end="opacity-100 transform scale-100" class="px-6 pb-4 text-neutral-600">
+        <p>Yes, we welcome abstract submissions for oral and poster presentations. The deadline for submissions is June 30, 2023. Visit our website's submission portal to submit your abstract. All submissions will be reviewed by our scientific committee, and authors will be notified of acceptance by July 15, 2023.</p>
+      </div>
+    </div>
+    
+    <!-- Question 3 -->
+    <div class="border border-gray-200 dark:border-gray-300 rounded-lg shadow-sm">
+      <button @click="selected !== 3 ? selected = 3 : selected = null" class="flex justify-between items-center w-full px-6 py-4 text-left" :class="{'text-[#8e44ad] font-semibold': selected == 3}">
+        <span class="text-lg">Will the sessions be recorded for later viewing?</span>
+        <svg class="w-5 h-5 transform transition-transform duration-300" :class="{'rotate-180': selected == 3}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </button>
+      <div x-show="selected == 3" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform scale-95" x-transition:enter-end="opacity-100 transform scale-100" class="px-6 pb-4 text-neutral-600">
+        <p>Yes, all keynote and technical sessions will be recorded and made available to registered attendees for up to 30 days after the conference. However, some workshops and interactive sessions may not be recorded due to their hands-on nature. Attendees will receive access information for the recordings after the conference.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Venue Questions -->
+  <div x-show="activeCategory === 'venue'" class="space-y-6 hidden" x-data="{selected:null}">
+    <!-- Question 1 -->
+    <div class="border border-gray-200 dark:border-gray-300 rounded-lg shadow-sm">
+      <button @click="selected !== 1 ? selected = 1 : selected = null" class="flex justify-between items-center w-full px-6 py-4 text-left" :class="{'text-[#8e44ad] font-semibold': selected == 1}">
+        <span class="text-lg">Where is the conference being held?</span>
+        <svg class="w-5 h-5 transform transition-transform duration-300" :class="{'rotate-180': selected == 1}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </button>
+      <div x-show="selected == 1" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform scale-95" x-transition:enter-end="opacity-100 transform scale-100" class="px-6 pb-4 text-neutral-600">
+        <p>The conference will take place at the San Francisco Convention Center, located at 747 Howard Street, San Francisco, CA 94103. The venue is centrally located in downtown San Francisco, easily accessible via public transportation and a short distance from many hotels and restaurants.</p>
+      </div>
+    </div>
+    
+    <!-- Question 2 -->
+    <div class="border border-gray-200 dark:border-gray-300 rounded-lg shadow-sm">
+      <button @click="selected !== 2 ? selected = 2 : selected = null" class="flex justify-between items-center w-full px-6 py-4 text-left" :class="{'text-[#8e44ad] font-semibold': selected == 2}">
+        <span class="text-lg">Are there recommended hotels near the venue?</span>
+        <svg class="w-5 h-5 transform transition-transform duration-300" :class="{'rotate-180': selected == 2}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </button>
+      <div x-show="selected == 2" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform scale-95" x-transition:enter-end="opacity-100 transform scale-100" class="px-6 pb-4 text-neutral-600">
+        <p>Yes, we have negotiated special rates at several hotels near the convention center. The Grand Hyatt San Francisco, Marriott Marquis, and Hotel Zetta are all within walking distance and offer conference rates. Book through our <a href="#venue" class="text-[#3498db] hover:underline">Venue page</a> using code WOMENOPTICS2023 to receive the discounted rate. We recommend booking early as rooms will fill up quickly.</p>
+      </div>
+    </div>
+    
+    <!-- Question 3 -->
+    <div class="border border-gray-200 dark:border-gray-300 rounded-lg shadow-sm">
+      <button @click="selected !== 3 ? selected = 3 : selected = null" class="flex justify-between items-center w-full px-6 py-4 text-left" :class="{'text-[#8e44ad] font-semibold': selected == 3}">
+        <span class="text-lg">What airports serve San Francisco and how do I get to the venue?</span>
+        <svg class="w-5 h-5 transform transition-transform duration-300" :class="{'rotate-180': selected == 3}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </button>
+      <div x-show="selected == 3" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform scale-95" x-transition:enter-end="opacity-100 transform scale-100" class="px-6 pb-4 text-neutral-600">
+        <p>San Francisco is served by San Francisco International Airport (SFO), which is approximately 13 miles from the venue, and Oakland International Airport (OAK), about 20 miles away. From SFO, you can take BART (Bay Area Rapid Transit) directly to Powell Street Station, which is a 10-minute walk to the convention center. Taxis, ride-sharing services like Uber and Lyft, and airport shuttles are also available. Travel time from SFO is typically 25-30 minutes, depending on traffic.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Other Questions -->
+  <div x-show="activeCategory === 'other'" class="space-y-6 hidden" x-data="{selected:null}">
+    <!-- Question 1 -->
+    <div class="border border-gray-200 dark:border-gray-300 rounded-lg shadow-sm">
+      <button @click="selected !== 1 ? selected = 1 : selected = null" class="flex justify-between items-center w-full px-6 py-4 text-left" :class="{'text-[#8e44ad] font-semibold': selected == 1}">
+        <span class="text-lg">Is the conference only for women?</span>
+        <svg class="w-5 h-5 transform transition-transform duration-300" :class="{'rotate-180': selected == 1}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </button>
+      <div x-show="selected == 1" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform scale-95" x-transition:enter-end="opacity-100 transform scale-100" class="px-6 pb-4 text-neutral-600">
+        <p>No, the conference is open to all genders. While our mission focuses on celebrating and advancing women in optics and photonics, we welcome all participants who share this goal. We believe diversity and inclusion drive innovation, and everyone's participation is valuable for the advancement of the field.</p>
+      </div>
+    </div>
+    
+    <!-- Question 2 -->
+    <div class="border border-gray-200 dark:border-gray-300 rounded-lg shadow-sm">
+      <button @click="selected !== 2 ? selected = 2 : selected = null" class="flex justify-between items-center w-full px-6 py-4 text-left" :class="{'text-[#8e44ad] font-semibold': selected == 2}">
+        <span class="text-lg">Will there be networking opportunities?</span>
+        <svg class="w-5 h-5 transform transition-transform duration-300" :class="{'rotate-180': selected == 2}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </button>
+      <div x-show="selected == 2" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform scale-95" x-transition:enter-end="opacity-100 transform scale-100" class="px-6 pb-4 text-neutral-600">
+        <p>Absolutely! Networking is a key component of the conference. We have scheduled several dedicated networking events, including a welcome reception on the first evening, a poster session with refreshments, and a networking dinner. Additionally, coffee breaks between sessions provide informal opportunities to connect with speakers, sponsors, and fellow attendees.</p>
+      </div>
+    </div>
+    
+    <!-- Question 3 -->
+    <div class="border border-gray-200 dark:border-gray-300 rounded-lg shadow-sm">
+      <button @click="selected !== 3 ? selected = 3 : selected = null" class="flex justify-between items-center w-full px-6 py-4 text-left" :class="{'text-[#8e44ad] font-semibold': selected == 3}">
+        <span class="text-lg">What should I bring to the conference?</span>
+        <svg class="w-5 h-5 transform transition-transform duration-300" :class="{'rotate-180': selected == 3}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </button>
+      <div x-show="selected == 3" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform scale-95" x-transition:enter-end="opacity-100 transform scale-100" class="px-6 pb-4 text-neutral-600">
+        <p>We recommend bringing business cards for networking, a laptop or tablet for taking notes (WiFi will be provided), and comfortable attire suitable for a professional conference. San Francisco weather can be variable, so layers are recommended. If you're presenting a poster, don't forget to bring your printed poster according to the specifications provided in your acceptance email.</p>
+      </div>
+    </div>
+    
+    <!-- Question 4 -->
+    <div class="border border-gray-200 dark:border-gray-300 rounded-lg shadow-sm">
+      <button @click="selected !== 4 ? selected = 4 : selected = null" class="flex justify-between items-center w-full px-6 py-4 text-left" :class="{'text-[#8e44ad] font-semibold': selected == 4}">
+        <span class="text-lg">How can I become a sponsor or exhibitor?</span>
+        <svg class="w-5 h-5 transform transition-transform duration-300" :class="{'rotate-180': selected == 4}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </button>
+      <div x-show="selected == 4" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform scale-95" x-transition:enter-end="opacity-100 transform scale-100" class="px-6 pb-4 text-neutral-600">
+        <p>We offer various sponsorship packages and exhibition opportunities for companies and organizations. Please visit our <a href="#sponsors" class="text-[#3498db] hover:underline">Sponsors page</a> for details about available packages, or contact our sponsorship team directly at <span class="text-[#8e44ad] font-medium">sponsors@womenoptics2023.com</span> for a custom package tailored to your organization's goals.</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Contact for more questions -->
+  <div class="mt-12 bg-gradient-to-r from-[#8e44ad]/10 to-[#3498db]/10 dark:from-[#8e44ad]/20 dark:to-[#3498db]/20 rounded-xl p-8 text-center">
+    <h3 class="text-xl font-bold mb-4 text-neutral-800 dark:text-neutral-800">Still have questions?</h3>
+    <p class="text-neutral-600 dark:text-neutral-600 mb-6">
+      If you couldn't find the answer to your question, please feel free to contact us directly.
+    </p>
+    <a href="#contact" class="inline-flex items-center px-6 py-3 bg-[#8e44ad] hover:bg-[#7d3b98] text-white font-semibold rounded-lg transition-colors duration-300 shadow-md">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path>
+      </svg>
+      Contact Us
+    </a>
+  </div>
+</div>
+</div>
+</section>
+
+<script>
+// Alpine.js initialization for tabs
+document.addEventListener('alpine:init', () => {
+Alpine.data('faqData', () => ({
+  activeCategory: 'registration',
+  setActiveCategory(category) {
+    this.activeCategory = category;
+  }
+}))
+});
+
+// Fallback for non-Alpine implementation
+document.addEventListener('DOMContentLoaded', function() {
+if (typeof Alpine === 'undefined') {
+  const tabButtons = document.querySelectorAll('[x-data] button');
+  const tabPanels = document.querySelectorAll('[x-show]');
+  
+  // Initially show only registration questions
+  tabPanels.forEach(panel => {
+    if (panel.getAttribute('x-show') === "activeCategory === 'registration'") {
+      panel.classList.remove('hidden');
+    } else {
+      panel.classList.add('hidden');
+    }
+  });
+  
+  // Handle tab switching
+  tabButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      const targetCategory = this.getAttribute('@click').split("'")[1];
+      
+      // Update button styles
+      tabButtons.forEach(btn => {
+        if (btn.getAttribute('@click').includes(targetCategory)) {
+          btn.classList.add('bg-[#8e44ad]', 'text-white');
+          btn.classList.remove('bg-gray-100', 'text-gray-800', 'hover:bg-gray-200');
+        } else {
+          btn.classList.remove('bg-[#8e44ad]', 'text-white');
+          btn.classList.add('bg-gray-100', 'text-gray-800', 'hover:bg-gray-200');
+        }
+      });
+      
+      // Show/hide content
+      tabPanels.forEach(panel => {
+        if (panel.getAttribute('x-show').includes(targetCategory)) {
+          panel.classList.remove('hidden');
+        } else {
+          panel.classList.add('hidden');
+        }
+      });
+    });
+  });
+  
+  // Handle accordion functionality
+  const accordionButtons = document.querySelectorAll('[x-data="{selected:null}"] button');
+  accordionButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      const content = this.nextElementSibling;
+      const isShown = !content.classList.contains('hidden');
+      
+      // Toggle content visibility
+      if (isShown) {
+        content.classList.add('hidden');
+        this.classList.remove('text-[#8e44ad]', 'font-semibold');
+        this.querySelector('svg').classList.remove('rotate-180');
+      } else {
+        content.classList.remove('hidden');
+        this.classList.add('text-[#8e44ad]', 'font-semibold');
+        this.querySelector('svg').classList.add('rotate-180');
+      }
+    });
+  });
+}
+});
+</script>
+</div>
+</section>
+<section id="section-c460c338-a33a-4f5c-a517-92d611c86cbc">
+<div id="root">
+<section id="contact" class="py-20 bg-gradient-to-b from-neutral-900 to-[#3f1959] text-white">
+<div class="container mx-auto px-4">
+<!-- Section header -->
+<div class="text-center mb-16">
+  <h2 class="text-3xl md:text-4xl font-bold mb-4">
+    Get In <span class="text-[#e74c3c]">Touch</span>
+  </h2>
+  <div class="w-20 h-1 bg-[#3498db] mx-auto mb-6"></div>
+  <p class="text-lg text-gray-300 max-w-3xl mx-auto">
+    Have questions about the Women in Optics &amp; Photonics Conference? We're here to help. Reach out to us using the contact information below.
+  </p>
+</div>
+
+<div class="max-w-6xl mx-auto">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+    <!-- Contact Form -->
+    <div class="bg-neutral-800 bg-opacity-70 rounded-xl p-8 shadow-xl">
+      <h3 class="text-2xl font-bold mb-6">Send Us a Message</h3>
+      <form>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
+          <div>
+            <label for="name" class="block text-sm font-medium text-gray-300 mb-1">Your Name *</label>
+            <input type="text" id="name" name="name" required="" class="w-full px-4 py-2 bg-neutral-700 border border-neutral-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8e44ad] text-white">
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-300 mb-1">Email Address *</label>
+            <input type="email" id="email" name="email" required="" class="w-full px-4 py-2 bg-neutral-700 border border-neutral-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8e44ad] text-white">
+          </div>
+        </div>
+        <div class="mb-6">
+          <label for="subject" class="block text-sm font-medium text-gray-300 mb-1">Subject *</label>
+          <input type="text" id="subject" name="subject" required="" class="w-full px-4 py-2 bg-neutral-700 border border-neutral-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8e44ad] text-white">
+        </div>
+        <div class="mb-6">
+          <label for="inquiry-type" class="block text-sm font-medium text-gray-300 mb-1">Type of Inquiry</label>
+          <select id="inquiry-type" name="inquiry-type" class="w-full px-4 py-2 bg-neutral-700 border border-neutral-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8e44ad] text-white">
+            <option value="registration">Registration Question</option>
+            <option value="program">Program &amp; Schedule</option>
+            <option value="abstracts">Abstract Submission</option>
+            <option value="sponsorship">Sponsorship Information</option>
+            <option value="venue">Venue &amp; Accommodations</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="mb-6">
+          <label for="message" class="block text-sm font-medium text-gray-300 mb-1">Your Message *</label>
+          <textarea id="message" name="message" rows="5" required="" class="w-full px-4 py-2 bg-neutral-700 border border-neutral-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8e44ad] text-white"></textarea>
+        </div>
+        <div class="mb-6">
+          <div class="flex items-start">
+            <input type="checkbox" id="privacy-consent" name="privacy-consent" required="" class="mt-1 h-4 w-4 text-[#8e44ad] focus:ring-[#8e44ad] rounded">
+            <label for="privacy-consent" class="ml-2 block text-sm text-gray-300">
+              I consent to having my data processed according to the <a href="#" class="text-[#3498db] hover:underline">Privacy Policy</a> *
+            </label>
+          </div>
+        </div>
+        <button type="submit" class="w-full py-3 px-6 bg-gradient-to-r from-[#8e44ad] to-[#3498db] hover:from-[#7d3b98] hover:to-[#2980b9] rounded-lg font-bold transition-all duration-300 transform hover:scale-105 shadow-lg">
+          Send Message
+        </button>
+      </form>
+    </div>
+
+    <!-- Contact Information -->
+    <div class="space-y-8">
+      <div class="bg-neutral-800 bg-opacity-50 rounded-xl p-8 shadow-lg">
+        <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+        
+        <div class="space-y-6">
+          <div class="flex items-start">
+            <div class="bg-[#8e44ad] bg-opacity-20 p-3 rounded-full mr-5">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#8e44ad]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+              </svg>
+            </div>
+            <div>
+              <h4 class="text-lg font-semibold mb-1">Email Us</h4>
+              <p class="text-gray-300 mb-2">For general inquiries:</p>
+              <a href="mailto:info@womenoptics2023.com" class="text-[#3498db] hover:underline">info@womenoptics2023.com</a>
+              <p class="text-gray-300 mt-2 mb-2">For registration support:</p>
+              <a href="mailto:registration@womenoptics2023.com" class="text-[#3498db] hover:underline">registration@womenoptics2023.com</a>
+            </div>
+          </div>
+          
+          <div class="flex items-start">
+            <div class="bg-[#e74c3c] bg-opacity-20 p-3 rounded-full mr-5">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#e74c3c]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+              </svg>
+            </div>
+            <div>
+              <h4 class="text-lg font-semibold mb-1">Call Us</h4>
+              <p class="text-gray-300 mb-2">Conference Hotline:</p>
+              <a href="tel:+14155551234" class="text-[#3498db] hover:underline">+1 (415) 555-1234</a>
+              <p class="text-gray-300 mt-2 mb-1">Hours of Operation:</p>
+              <p class="text-gray-300">Monday to Friday: 9:00 AM - 5:00 PM (PST)</p>
+            </div>
+          </div>
+          
+          <div class="flex items-start">
+            <div class="bg-[#3498db] bg-opacity-20 p-3 rounded-full mr-5">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#3498db]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              </svg>
+            </div>
+            <div>
+              <h4 class="text-lg font-semibold mb-1">Conference Venue</h4>
+              <p class="text-gray-300 mb-1">San Francisco Convention Center</p>
+              <p class="text-gray-300 mb-2">747 Howard Street, San Francisco, CA 94103</p>
+              <a href="#venue" class="text-[#3498db] hover:underline">View on map</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Social Media & Quick Links -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div class="bg-neutral-800 bg-opacity-50 rounded-xl p-8 shadow-lg">
+          <h4 class="text-xl font-bold mb-4">Connect With Us</h4>
+          <div class="flex space-x-4">
+            <a href="#" class="bg-[#3b5998] hover:bg-opacity-80 p-3 rounded-full transition-all duration-300">
+              <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path>
+              </svg>
+            </a>
+            <a href="#" class="bg-[#1da1f2] hover:bg-opacity-80 p-3 rounded-full transition-all duration-300">
+              <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
+              </svg>
+            </a>
+            <a href="#" class="bg-[#0e76a8] hover:bg-opacity-80 p-3 rounded-full transition-all duration-300">
+              <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill-rule="evenodd" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" clip-rule="evenodd"></path>
+              </svg>
+            </a>
+            <a href="#" class="bg-[#ea4c89] hover:bg-opacity-80 p-3 rounded-full transition-all duration-300">
+              <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill-rule="evenodd" d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z" clip-rule="evenodd"></path>
+              </svg>
+            </a>
+          </div>
+          <div class="mt-4">
+            <p class="text-gray-300 mb-2">Follow us for conference updates and news.</p>
+            <p class="text-gray-300 text-sm">Conference hashtag: <span class="text-[#3498db] font-medium">#WomenInOptics2023</span></p>
+          </div>
+        </div>
+        
+        <div class="bg-neutral-800 bg-opacity-50 rounded-xl p-8 shadow-lg">
+          <h4 class="text-xl font-bold mb-4">Quick Links</h4>
+          <ul class="space-y-3">
+            <li>
+              <a href="#registration" class="flex items-center text-gray-300 hover:text-[#3498db] transition-colors duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2 text-[#e74c3c]" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                </svg>
+                Registration Information
+              </a>
+            </li>
+            <li>
+              <a href="#schedule" class="flex items-center text-gray-300 hover:text-[#3498db] transition-colors duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2 text-[#e74c3c]" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                </svg>
+                Conference Schedule
+              </a>
+            </li>
+            <li>
+              <a href="#speakers" class="flex items-center text-gray-300 hover:text-[#3498db] transition-colors duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2 text-[#e74c3c]" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                </svg>
+                Conference Speakers
+              </a>
+            </li>
+            <li>
+              <a href="#venue" class="flex items-center text-gray-300 hover:text-[#3498db] transition-colors duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2 text-[#e74c3c]" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                </svg>
+                Venue &amp; Accommodations
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+</div>
+</section>
+<section id="section-215511c0-0e9c-4518-bf28-29c27ee4c53d">
+<div id="root">
+<footer id="footer" class="bg-neutral-900 text-white pt-12 pb-8">
+<div class="container mx-auto px-4">
+<!-- Top footer section with logo and navigation -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+  <!-- Logo and about -->
+  <div class="col-span-1 lg:col-span-1">
+    <div class="flex items-center mb-4">
+      <span class="text-2xl font-bold text-white">WomenIn<span class="text-[#8e44ad]">Optics</span></span>
+    </div>
+    <p class="text-gray-400 mb-4">
+      An international conference celebrating and advancing women in the fields of optics and photonics.
+    </p>
+    <p class="text-gray-400 mb-4">
+      September 15-18, 2023<br>
+      San Francisco, California
+    </p>
+    <div class="flex space-x-4 mt-4">
+      <a href="#" aria-label="Facebook" class="text-gray-400 hover:text-[#3498db] transition-colors duration-300">
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path>
+        </svg>
+      </a>
+      <a href="#" aria-label="Twitter" class="text-gray-400 hover:text-[#3498db] transition-colors duration-300">
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
+        </svg>
+      </a>
+      <a href="#" aria-label="LinkedIn" class="text-gray-400 hover:text-[#3498db] transition-colors duration-300">
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill-rule="evenodd" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" clip-rule="evenodd"></path>
+        </svg>
+      </a>
+      <a href="#" aria-label="Instagram" class="text-gray-400 hover:text-[#3498db] transition-colors duration-300">
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"></path>
+        </svg>
+      </a>
+    </div>
+  </div>
+  
+  <!-- Quick Links -->
+  <div class="col-span-1">
+    <h3 class="text-lg font-semibold mb-4 text-white">Quick Links</h3>
+    <ul class="space-y-2">
+      <li>
+        <a href="#hero" class="text-gray-400 hover:text-[#e74c3c] transition-colors duration-300">Home</a>
+      </li>
+      <li>
+        <a href="#about" class="text-gray-400 hover:text-[#e74c3c] transition-colors duration-300">About</a>
+      </li>
+      <li>
+        <a href="#dates" class="text-gray-400 hover:text-[#e74c3c] transition-colors duration-300">Dates</a>
+      </li>
+      <li>
+        <a href="#speakers" class="text-gray-400 hover:text-[#e74c3c] transition-colors duration-300">Speakers</a>
+      </li>
+      <li>
+        <a href="#schedule" class="text-gray-400 hover:text-[#e74c3c] transition-colors duration-300">Schedule</a>
+      </li>
+      <li>
+        <a href="#registration" class="text-gray-400 hover:text-[#e74c3c] transition-colors duration-300">Registration</a>
+      </li>
+      <li>
+        <a href="#venue" class="text-gray-400 hover:text-[#e74c3c] transition-colors duration-300">Venue</a>
+      </li>
+    </ul>
+  </div>
+  
+  <!-- Resources -->
+  <div class="col-span-1">
+    <h3 class="text-lg font-semibold mb-4 text-white">Resources</h3>
+    <ul class="space-y-2">
+      <li>
+        <a href="#sponsors" class="text-gray-400 hover:text-[#e74c3c] transition-colors duration-300">Sponsors</a>
+      </li>
+      <li>
+        <a href="#faq" class="text-gray-400 hover:text-[#e74c3c] transition-colors duration-300">FAQ</a>
+      </li>
+      <li>
+        <a href="#contact" class="text-gray-400 hover:text-[#e74c3c] transition-colors duration-300">Contact</a>
+      </li>
+      <li>
+        <a href="/privacy" class="text-gray-400 hover:text-[#e74c3c] transition-colors duration-300">Privacy Policy</a>
+      </li>
+      <li>
+        <a href="/terms" class="text-gray-400 hover:text-[#e74c3c] transition-colors duration-300">Terms of Service</a>
+      </li>
+      <li>
+        <a href="#" class="text-gray-400 hover:text-[#e74c3c] transition-colors duration-300">Press Kit</a>
+      </li>
+    </ul>
+  </div>
+  
+  <!-- Newsletter -->
+  <div class="col-span-1">
+    <h3 class="text-lg font-semibold mb-4 text-white">Subscribe to Our Newsletter</h3>
+    <p class="text-gray-400 mb-4">
+      Stay updated with conference news, speaker announcements, and important dates.
+    </p>
+    <form class="flex flex-col sm:flex-row gap-2">
+      <input type="email" placeholder="Your email address" class="px-4 py-2 bg-neutral-800 border border-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8e44ad] text-white flex-grow">
+      <button type="submit" class="px-4 py-2 bg-[#8e44ad] hover:bg-[#7d3b98] text-white font-semibold rounded-lg transition-colors duration-300">
+        Subscribe
+      </button>
+    </form>
+    <p class="text-xs text-gray-500 mt-2">
+      We respect your privacy. Unsubscribe at any time.
+    </p>
+  </div>
+</div>
+
+<!-- Divider -->
+<div class="h-px bg-neutral-800 my-8"></div>
+
+<!-- Bottom footer -->
+<div class="flex flex-col md:flex-row justify-between items-center">
+  <div class="text-gray-500 text-sm mb-4 md:mb-0">
+    © 2023 Women in Optics &amp; Photonics Conference. All rights reserved.
+  </div>
+  
+  <div class="flex items-center space-x-4">
+    <a href="#" class="text-xs text-gray-500 hover:text-[#3498db] transition-colors duration-300">Privacy Policy</a>
+    <span class="text-gray-600">|</span>
+    <a href="#" class="text-xs text-gray-500 hover:text-[#3498db] transition-colors duration-300">Terms of Service</a>
+    <span class="text-gray-600">|</span>
+    <a href="#" class="text-xs text-gray-500 hover:text-[#3498db] transition-colors duration-300">Cookie Policy</a>
+  </div>
+</div>
+
+<!-- Back to top button -->
+<div class="flex justify-center mt-8">
+  <a href="#hero" class="inline-flex items-center justify-center w-10 h-10 bg-[#8e44ad] hover:bg-[#7d3b98] rounded-full transition-colors duration-300 group">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white transform group-hover:-translate-y-1 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path>
+    </svg>
+  </a>
+</div>
+</div>
+</footer>
+
+<script>
+// Smooth scroll for back to top button
+document.addEventListener('DOMContentLoaded', function() {
+const scrollToTopButton = document.querySelector('a[href="#hero"]');
+
+if (scrollToTopButton) {
+  scrollToTopButton.addEventListener('click', function(e) {
+    e.preventDefault();
+    
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+}
+});
+</script>
+</div>
+</section>
+    </div>
+  </body>
+</html>
