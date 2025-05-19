@@ -1,5 +1,5 @@
 // Navigation Items
-const navItems = ["hero", "about", "dates", "speakers", "schedule", "registration", "venue", "sponsors", "faq", "contact"];
+const navItems = ["Home", "about", "dates", "speakers", "schedule", "registration", "venue", "sponsors", "faq", "contact"];
 const desktopNav = document.getElementById('nav-links-desktop');
 const mobileNav = document.getElementById('nav-links-mobile');
 
