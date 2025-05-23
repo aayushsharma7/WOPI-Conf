@@ -1,4 +1,169 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const scheduleData = {
+    day1: [
+      {
+        time: "05:00 PM - 06:00 PM",
+        activity: "Conference Registration & High Tea",
+      },
+      {
+        time: "06:00 PM - 06:30 PM",
+        activity: "Inaugural Session",
+      },
+      {
+        time: "06:30 PM - 07:00 PM",
+        activity: "Talk by Chief Guest (Kiran Bedi/Sudha Murti/Kiran Shaw)",
+      },
+      {
+        time: "07:00 PM - 07:30 PM",
+        activity: "Rangla Punjab (Cultural event)",
+      },
+      {
+        time: "07:30 PM Onwards",
+        activity: "Gala Dinner",
+      },
+    ],
+    day2: [
+      {
+        time: "09:00 AM - 09:45 AM",
+        activity: "Plenary Talk-1 (CSIR Director Gen/...)",
+      },
+      {
+        time: "10:00 AM - 10:30 AM",
+        activity:
+          "Session I: Integrated and On-Chip Optics - Technical talk 1: Dr. Geetanjali Yadav, Dr. Manju Rani",
+      },
+      {
+        time: "10:30 AM - 11:00 AM",
+        activity:
+          "Session I: Integrated and On-Chip Optics - Technical talk 2: Dr. Pratibha Singhal, Dr. Harveen Kaur",
+      },
+      {
+        time: "11:00 AM - 11:15 AM",
+        activity: "Tea Break",
+      },
+      {
+        time: "11:15 AM - 12:15 PM",
+        activity: "Workshop by Prof. Anita Mahadevan",
+      },
+      {
+        time: "12:15 PM - 12:45 PM",
+        activity:
+          "Session II: Biophotonics and Optical Sensors - Technical talk 3: Dr. Sarita Aggarwal, Dr. Neetu Bhardwaj",
+      },
+      {
+        time: "12:45 PM - 01:15 PM",
+        activity:
+          "Session II: Biophotonics and Optical Sensors - Technical talk 4: Dr. Ritu Soni, Dr. Anju Pandey, Dr. Jyoti K. Sharma",
+      },
+      {
+        time: "01:30 PM - 02:30 PM",
+        activity: "Lunch",
+      },
+      {
+        time: "02:30 PM - 03:30 PM",
+        activity:
+          "Session III: Photonic Computing and Artificial Intelligence - Panel Discussion I: Discussing the paradigm shifts in research driven by AI",
+      },
+      {
+        time: "03:30 PM - 04:30 PM",
+        activity: "3 in 1 Thesis presentation",
+      },
+      {
+        time: "04:30 PM - 04:45 PM",
+        activity: "Tea Break",
+      },
+      {
+        time: "05:00 PM - 07:30 PM",
+        activity: "Poster Presentation-I",
+      },
+      {
+        time: "07:30 PM Onwards",
+        activity: "Dinner",
+      },
+    ],
+    day3: [
+      {
+        time: "09:00 AM - 09:45 AM",
+        activity: "Plenary Talk-2",
+      },
+      {
+        time: "10:00 AM - 10:30 AM",
+        activity:
+          "Wellness workshop: Strength & Confidence: Building Mental & Emotional Resilience",
+      },
+      {
+        time: "10:30 AM - 11:00 AM",
+        activity:
+          "Session IV: Quantum Technology and Optical Communication - Technical talk 5: Dr. Neha K. Gupta, Dr. Shubhra Bansal",
+      },
+      {
+        time: "11:00 AM - 11:30 AM",
+        activity:
+          "Session IV: Quantum Technology and Optical Communication - Technical talk 6: Dr. Amrita Roy, Dr. Shubhee Sharma",
+      },
+      {
+        time: "11:30 AM - 11:45 AM",
+        activity: "Tea Break",
+      },
+      {
+        time: "11:45 AM - 02:00 PM",
+        activity: "Poster Presentation-II",
+      },
+      {
+        time: "02:00 PM - 03:00 PM",
+        activity: "Lunch",
+      },
+      {
+        time: "03:00 PM - 03:30 PM",
+        activity:
+          "Session V: Optical materials and Devices - Technical talk 7: Dr. Anjali Tyagi, Dr. Jyothi Yadav",
+      },
+      {
+        time: "03:30 PM - 04:30 PM",
+        activity:
+          "Panel Discussion II: Life after PhD-Navigating the research careers",
+      },
+      {
+        time: "04:30 PM - 04:45 PM",
+        activity: "Valedictory & Prize Distribution",
+      },
+      {
+        time: "05:00 PM - 07:00 PM",
+        activity: "Guided visit to Sukhna Lake & Recreational activity",
+      },
+      {
+        time: "07:30 PM onwards",
+        activity: "Dinner",
+      },
+    ],
+  };
+
+  function createSchedule(day, data) {
+    const dayDiv = document.getElementsByClassName(`schedule-${day}`)[0];
+
+    const dayContent = data
+      .map((session) => {
+        return `<div class="grid grid-cols-8 border-b border-gray-100">
+                <div class="col-span-2 px-4 py-3 bg-gray-50 font-semibold text-gray-700 whitespace-nowrap">
+                  ${session.time}
+                </div>
+                <div class="col-span-6 px-4 py-3">
+                  <span class="font-medium">${session.activity}</span>
+                </div>
+              </div>`;
+      })
+      .join("");
+
+    dayDiv.innerHTML = `<div class="max-w-5xl mx-auto bg-white dark:bg-white shadow-md rounded-xl overflow-hidden">
+                          ${dayContent}
+                        </div>`;
+  }
+
+  for (let [day, data] of Object.entries(scheduleData)) {
+    console.log(day, data);
+    createSchedule(day, data);
+  }
+
   const navItems = [
     "Home",
     "about",
@@ -7,8 +172,8 @@ document.addEventListener("DOMContentLoaded", () => {
     "schedule",
     "registration",
     "venue",
+    "Organisers",
     "sponsors",
-    "faq",
     "contact",
   ];
 
@@ -88,6 +253,14 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 3000);
   }
 
+  document.querySelector(".prev").addEventListener("click", () => {
+    const slides = document.querySelectorAll(
+      `#${currentCategory}-slides .slide`
+    );
+    slideIndex = slideIndex > 0 ? slideIndex - 1 : slides.length - 1;
+    showSlides(slideIndex, currentCategory);
+  });
+
   document.querySelector(".next").addEventListener("click", () => {
     const slides = document.querySelectorAll(
       `#${currentCategory}-slides .slide`
@@ -120,8 +293,38 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  addSlides("conference-slides", "sd", 1, 10);
   updateDots(currentCategory);
   showSlides(slideIndex, currentCategory);
+
+  function addSlides(categoryId, imgPrefix, startIndex, endIndex) {
+    let category = document.getElementById(categoryId);
+    for (let i = startIndex; i <= endIndex; i++) {
+      let slide = document.createElement("div");
+      slide.className = "slide";
+
+      let img = document.createElement("img");
+      console.log(`images/${imgPrefix}${i}.jpeg`);
+      img.src = `images/${imgPrefix}${i}.jpeg`; // Adjust this path and extension as needed
+      img.alt = `Slide ${i}`;
+
+      let caption = document.createElement("div");
+      caption.className = "caption";
+
+      let heading = document.createElement("h3");
+      heading.textContent = `Slide ${i} Title`;
+
+      let paragraph = document.createElement("p");
+      paragraph.textContent = `Description for slide ${i}`;
+
+      // caption.appendChild(heading);
+      // caption.appendChild(paragraph);
+
+      slide.appendChild(img);
+      slide.appendChild(caption);
+      category.appendChild(slide);
+    }
+  }
   startSlideshow(currentCategory);
 
   // Alpine.js fallback
@@ -169,9 +372,10 @@ document.addEventListener("DOMContentLoaded", () => {
       inquiry_type: form["inquiry-type"].value,
     };
 
+    console.log(templateParams);
+
     emailjs.send(serviceID, templateID, templateParams).then(
       () => {
-        alert("Message sent successfully!");
         form.reset();
       },
       (error) => {
@@ -179,27 +383,4 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     );
   });
-});
-
-document.querySelector(".prev").addEventListener("click", () => {
-  // const slides = document.querySelectorAll(`#${currentCategory}-slides .slide`);
-  // slideIndex = slideIndex > 0 ? slideIndex - 1 : slides.length - 1;
-  // showSlides(slideIndex, currentCategory);
-
-  const serviceID = "service_6t10hrb";
-  const templateID = "template_vzlqp6j";
-
-  const templateParams = {
-    name: "Nitin",
-  };
-
-  emailjs.send(serviceID, templateID, templateParams).then(
-    () => {
-      alert("Message sent successfully!");
-      form.reset();
-    },
-    (error) => {
-      console.log("Failed to send message:", error);
-    }
-  );
 });
