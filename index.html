@@ -6,6 +6,8 @@
   <meta name="viewport"
     content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
   <link rel="stylesheet" href="style.css">
+  <title>WOPI2025</title>
+  <link rel="icon" href="images/Logo_white.png" type="image/x-icon">
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- <script src="main.js" defer></script> -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
@@ -22,7 +24,7 @@
             <img src="images/Logo_white.png" alt="WomenInOptics Logo" class="h-20 w-auto scale-[1.5]">
           </div>
           <div class="hidden md:flex ml-10 space-x-4" id="nav-links-desktop"></div>
-          <div class="md:hidden">
+          <div class="hidden">
             <button id="mobile-menu-button" aria-label="Open menu"
               class="inline-flex items-center justify-center p-2 rounded-md hover:bg-neutral-700 focus:ring-2 focus:ring-inset focus:ring-white">
               <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -41,7 +43,7 @@
 
     <!-- Home SECTION -->
     <!-- <section id="Home" class="relative bg-gradient-to-br from-neutral-700 to-[#3f1959] text-white pt-20 min-h-[70vh] flex items-center"> -->
-    <section id="Home" class="relative text-white pt-20 min-h-[60vh] flex items-center"
+    <section id="Home" class="relative text-white pt-14 min-h-[60vh] flex items-center"
       style="background-image: url('images/somepost.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
       <div class="absolute inset-0 bg-black bg-opacity-30 z-0"></div>
       <div class="container mx-auto pb-12 sm:pb-24 lg:pb-24 px-4 relative z-10 text-center">
@@ -54,14 +56,21 @@
 
           </div>
         </div>
-        <div class="flex items-center justify-center gap-12 flex-wrap">
-          <h1 class="text-white text-5xl md:text-5xl lg:text-7xl max-w-3xl mb-4 drop-shadow-lg">
-            4th Annual International Conference
+        <div class="flex items-center justify-center gap-12 flex-wrap mb-4">
+          <h1 class="text-white text-5xl md:text-5xl lg:text-6xl max-w-3xl font-semibold drop-shadow-lg">
+            4th Annual
+            <br>
+            International
+            <br>
+            Conference
           </h1>
         </div>
-        <p class=" text-white text-lg md:text-xl mb-12 max-w-3xl mx-auto text-gray-200 drop-shadow-lg">
+        <p
+          class="text-[#ffc72c] uppercase tracking-widest text-lg md:text-xl mb-8 max-w-3xl mx-auto drop-shadow-lg font-bold">
           Illuminating the future
-          <br> In Association with SPIE.</br>
+          <br>
+          <span class="text-white uppercase font-semibold">In Association with</span> <span
+            class="text-white text-3xl font-bold">SPIE</span>
         </p>
 
         <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
@@ -76,12 +85,12 @@
           </div>
         </div>
 
-        <div class="mt-12">
+        <div class="mt-12 justify-center">
           <a href="#registration"
             class="inline-block bg-[#8e44ad] hover:bg-[#7d3b98] text-white font-bold py-3 px-8 rounded-full transition-transform hover:scale-105 shadow-lg">Register
             Now</a>
           <a href="#schedule"
-            class="inline-block ml-4 bg-transparent hover:bg-white/10 text-white font-semibold py-3 px-8 border border-white/30 rounded-full hover:border-white/60">View
+            class="inline-block ml-4 bg-transparent hover:bg-white/10 text-white font-semibold py-3 px-8 mt-2 border border-white/30 rounded-full hover:border-white/60">View
             Schedule</a>
         </div>
       </div>
@@ -417,7 +426,7 @@
                   <div class="md:w-1/2 md:pr-12 md:text-right mb-8 md:mb-0">
                     <div
                       class="bg-white dark:bg-white shadow-md rounded-lg p-6 transform transition-transform duration-300 hover:scale-105 border-t-4 border-[#8e44ad]">
-                      <h3 class="text-xl font-bold text-[#8e44ad] mb-2">October 15, 2025</h3>
+                      <h3 class="text-xl font-bold text-[#8e44ad] mb-2">September 30, 2025</h3>
                       <h4 class="text-lg font-semibold text-neutral-800 mb-3">Notification of Acceptance</h4>
                       <p class="text-neutral-600">Authors will be notified about the acceptance of their submissions.
                       </p>
@@ -438,7 +447,7 @@
                   <div class="md:w-1/2 md:pl-12 mb-8 md:mb-0">
                     <div
                       class="bg-white dark:bg-white shadow-md rounded-lg p-6 transform transition-transform duration-300 hover:scale-105 border-t-4 border-[#e74c3c]">
-                      <h3 class="text-xl font-bold text-[#8e44ad] mb-2">September 30, 2025</h3>
+                      <h3 class="text-xl font-bold text-[#8e44ad] mb-2">October 15, 2025</h3>
                       <h4 class="text-lg font-semibold text-neutral-800 mb-3">Registration Deadline</h4>
                       <!-- <p class="text-neutral-600">Last day to register at the discounted early bird rate. Regular rates apply afterwards.</p> -->
                       <p class="text-neutral-600">Last day to register for the conference.</p>
@@ -576,7 +585,7 @@
                 </div>
               </div>
               <div class="p-6">
-                <h3 class="text-xl font-bold mb-1 group-hover:text-[#e74c3c] transition-colors duration-300">Dr. Rebecca Liu</h3>
+                <h3 class="text-xl font-bold group-hover:text-[#e74c3c] transition-colors duration-300">Dr. Rebecca Liu</h3>
                 <p class="text-[#8e44ad] font-medium mb-3">MIT • Optical Quantum Computing</p>
                 <p class="text-gray-300 mb-4 text-sm">
                   Leading researcher in quantum photonics with breakthrough achievements in optical computing architecture.
@@ -609,7 +618,7 @@
                 </div>
               </div>
               <div class="p-6">
-                <h3 class="text-xl font-bold mb-1 group-hover:text-[#e74c3c] transition-colors duration-300">Dr. Maria Kim</h3>
+                <h3 class="text-xl font-bold group-hover:text-[#e74c3c] transition-colors duration-300">Dr. Maria Kim</h3>
                 <p class="text-[#8e44ad] font-medium mb-3">Stanford • Biophotonics</p>
                 <p class="text-gray-300 mb-4 text-sm">
                   Pioneer in developing optical techniques for non-invasive cancer detection and treatment.
@@ -660,7 +669,7 @@
                 </div>
               </div>
               <div class="p-6">
-                <h3 class="text-xl font-bold mb-1 group-hover:text-[#e74c3c] transition-colors duration-300">John Smith</h3>
+                <h3 class="text-xl font-bold group-hover:text-[#e74c3c] transition-colors duration-300">John Smith</h3>
                 <p class="text-[#8e44ad] font-medium mb-3">University of Oxford • Panel Moderator</p>
                 <p class="text-gray-300 mb-4 text-sm">
                   Expert in panel discussions on quantum optics and its interdisciplinary applications.
@@ -711,7 +720,7 @@
                 </div>
               </div>
               <div class="p-6">
-                <h3 class="text-xl font-bold mb-1 group-hover:text-[#e74c3c] transition-colors duration-300">Alice Walker</h3>
+                <h3 class="text-xl font-bold group-hover:text-[#e74c3c] transition-colors duration-300">Alice Walker</h3>
                 <p class="text-[#8e44ad] font-medium mb-3">Harvard • Workshop Leader</p>
                 <p class="text-gray-300 mb-4 text-sm">
                   Leading workshops on photonic technologies and their applications in biomedical fields.
@@ -836,102 +845,51 @@
     </div>
   </section>
 
-  <section id="section-4ad38dca-cf21-4b00-be40-2bb9cf291e47">
-    <div id="root">
-      <section id="registration" class="pt-20 bg-gradient-to-b from-neutral-900 to-[#3f1959] text-white">
-        <div class="container mx-auto px-4">
-          <div class="max-w-6xl mx-auto">
-            <div class="text-center mb-16">
-              <h2 class="text-3xl md:text-4xl font-bold mb-4">
-                <span class="text-[#e74c3c]">Registration</span> Information
-              </h2>
-              <div class="flex flex-col items-center justify-center mt-16">
-                <!-- <h3 class="text-2xl font-bold mb-4 text-white">Quick Registration via QR Code</h3> -->
-                <p class="text-lg text-gray-200 mb-4 max-w-xl text-center">
-                  Scan the QR code below with your mobile device to access the online registration form instantly.
-                </p>
-                <img src="images/WOPI_QR.png" alt="Registration QR Code"
-                  class="w-56 h-56 rounded-lg shadow-lg border-4 border-white mb-4" />
-                <!-- <p class="text-base text-gray-300">
-              Or <a href="https://your-form-link.com" target="_blank" class="text-[#e74c3c] underline hover:text-[#8e44ad]">click here to register online</a>.
-            </p> -->
-              </div>
-              <p class="text-lg text-gray-300 max-w-3xl mx-auto">
-                Secure your spot at the Women in Optics &amp; Photonics Conference 2025.
-              </p>
-            </div>
 
+  <section id="registration" class="pt-20 bg-gradient-to-b from-neutral-900 to-[#3f1959] text-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">
+            <span class="text-[#e74c3c]">Registration</span> Information
+          </h2>
+          <p class="text-lg text-gray-200 mb-8 max-w-2xl mx-auto">
+            Follow the guidelines below to submit your work for the Women in Optics &amp; Photonics Conference 2025.
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center">
+            <a href="https://docs.google.com/document/d/1aLm-MpLyPT0IPBSekYqu1GfqJ4P5POX4ao2xOjxqDBY/edit?usp=sharing"
+              target="_blank"
+              class="bg-neutral-800 hover:bg-neutral-700 transition-colors duration-300 p-6 rounded-xl shadow-lg w-full max-w-xs border border-neutral-600">
+              <h3 class="text-xl font-semibold text-[#e74c3c] mb-2">Poster Format</h3>
+              <p class="text-sm text-gray-300">Download poster design requirements.</p>
+            </a>
 
-            <!-- Registration cards -->
-            <!-- <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-          </div> -->
+            <a href="https://docs.google.com/document/d/1HdY_auQcuoBpYm9zB4uKxg9jdVTjq3eGi3tkHDEEhpg/edit?usp=sharing"
+              target="_blank"
+              class="bg-neutral-800 hover:bg-neutral-700 transition-colors duration-300 p-6 rounded-xl shadow-lg w-full max-w-xs border border-neutral-600">
+              <h3 class="text-xl font-semibold text-[#e74c3c] mb-2">Abstract Format</h3>
+              <p class="text-sm text-gray-300">Get the structure for your abstract.</p>
+            </a>
 
-            <!-- Registration form -->
-            <!-- <div class="bg-neutral-800 rounded-xl shadow-2xl overflow-hidden">
-            <div class="p-8 md:p-10">
-              <h3 class="text-2xl font-bold mb-6">Register for the Conference</h3>
-
-              <form class="space-y-6"> -->
-            <!-- Personal Information -->
-            <!-- <div>
-                  <h4 class="text-lg font-semibold mb-4 text-[#e74c3c]">Personal Information</h4>
-                  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
-                    <div>
-                      <label for="first-name" class="block text-sm font-medium text-gray-300 mb-1">First Name *</label>
-                      <input type="text" id="first-name" name="first-name" required="" class="w-full px-4 py-2 bg-neutral-700 border border-neutral-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8e44ad] text-white">
-                    </div>
-                    <div>
-                      <label for="last-name" class="block text-sm font-medium text-gray-300 mb-1">Last Name *</label>
-                      <input type="text" id="last-name" name="last-name" required="" class="w-full px-4 py-2 bg-neutral-700 border border-neutral-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8e44ad] text-white">
-                    </div>
-                    <div>
-                      <label for="email" class="block text-sm font-medium text-gray-300 mb-1">Email Address *</label>
-                      <input type="email" id="email" name="email" required="" class="w-full px-4 py-2 bg-neutral-700 border border-neutral-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8e44ad] text-white">
-                    </div>
-                    <div>
-                      <label for="phone" class="block text-sm font-medium text-gray-300 mb-1">Phone Number</label>
-                      <input type="tel" id="phone" name="phone" class="w-full px-4 py-2 bg-neutral-700 border border-neutral-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8e44ad] text-white">
-                    </div>
-                  </div>
-                </div> -->
-
-            <!-- Affiliation Information -->
-            <!-- <div>
-                  <h4 class="text-lg font-semibold mb-4 text-[#3498db]">Affiliation</h4>
-                  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
-                    <div>
-                      <label for="organization" class="block text-sm font-medium text-gray-300 mb-1">Organization/Institution *</label>
-                      <input type="text" id="organization" name="organization" required="" class="w-full px-4 py-2 bg-neutral-700 border border-neutral-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8e44ad] text-white">
-                    </div>
-                    <div>
-                      <label for="position" class="block text-sm font-medium text-gray-300 mb-1">Position/Title</label>
-                      <input type="text" id="position" name="position" class="w-full px-4 py-2 bg-neutral-700 border border-neutral-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8e44ad] text-white">
-                    </div>
-                  </div>
-                </div> -->
-
-            <!-- Submit Button -->
-            <!-- <div>
-                  <button type="submit" class="w-full py-3 bg-[#e74c3c] hover:bg-[#c0392b] rounded-lg font-bold transition-colors duration-300">Submit Registration</button>
-                </div>
-              </form> -->
-
-            <!-- Need Help? -->
-            <!-- <div class="bg-neutral-800 bg-opacity-50 p-6 rounded-lg">
-                <div class="flex items-center mb-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#3498db] mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"></path>
-                  </svg>
-                  <h4 class="text-xl font-bold">Need Help?</h4>
-                </div>
-                <p class="text-gray-300">
-                  If you have any questions or need assistance with your registration, our team is here to help.
-                </p>
-                <a href="#" class="inline-block mt-4 text-[#3498db] hover:text-[#2980b9] font-medium">Contact support →</a>
-              </div> -->
+            <a href="https://docs.google.com/document/d/1gOIC0yGHBkYXq9j9ac_DzJ18_FeBRJspSBdgeIEjj3Q/edit?usp=sharing"
+              target="_blank"
+              class="bg-neutral-800 hover:bg-neutral-700 transition-colors duration-300 p-6 rounded-xl shadow-lg w-full max-w-xs border border-neutral-600">
+              <h3 class="text-xl font-semibold text-[#e74c3c] mb-2">Categories</h3>
+              <p class="text-sm text-gray-300">View submission categories.</p>
+            </a>
           </div>
         </div>
-    </div>
+        <div class="flex flex-col items-center justify-center mb-16 mt-16">
+          <p class="text-lg text-gray-200 mb-4 max-w-xl text-center">
+            Use the QR code below to access the online submission form instantly.
+          </p>
+          <img src="images/WOPI_QR.png" alt="Submission QR Code"
+            class="w-56 h-56 rounded-lg shadow-lg border-4 border-white mb-4" />
+          <p class="text-lg text-gray-300 max-w-3xl mx-auto">
+            Submit your work for the Women in Optics &amp; Photonics Conference 2025.
+          </p>
+        </div>
+      </div>
     </div>
   </section>
   </div>
@@ -1090,10 +1048,10 @@
         <!-- Core Organising Committee -->
         <div class="mb-16">
           <h3 class="text-2xl font-bold mb-8 text-center text-[#e74c3c]">Core Organising Committee</h3>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
+          <div class="flex gap-8 flex-wrap justify-center">
             <!-- Core Professor 1 -->
             <div
-              class="bg-neutral-700 rounded-xl overflow-hidden shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl group">
+              class="bg-neutral-700 rounded-xl overflow-hidden shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl group min-w-[350px]">
               <div class="h-64 bg-gradient-to-r from-[#8e44ad] to-[#3498db] relative overflow-hidden">
                 <div class="absolute inset-0 flex items-center justify-center">
                   <div class="w-36 h-36 rounded-full bg-neutral-800 flex items-center justify-center overflow-hidden">
@@ -1103,9 +1061,9 @@
                 </div>
               </div>
               <div class="p-6 relative">
-                <h3 class="text-xl font-bold mb-1 group-hover:text-[#e74c3c] transition-colors duration-300">Dr. Asima
+                <h3 class="text-xl font-bold group-hover:text-[#e74c3c] transition-colors duration-300">Dr. Asima
                   Pradhan</h3>
-                <!-- <p class="text-[#8e44ad] font-medium mb-3">Conference Chair</p> -->
+                <p class="text-[#8e44ad] font-medium mb-3">IIT Kanpur & SOA</p>
                 <!-- <p class="text-gray-300 mb-4 text-sm">
               Research Interests: Quantum Optics, Nonlinear Photonics
             </p> -->
@@ -1126,7 +1084,7 @@
             </div>
             <!-- Core Professor 2 -->
             <div
-              class="bg-neutral-700 rounded-xl overflow-hidden shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl group">
+              class="bg-neutral-700 rounded-xl overflow-hidden shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl group min-w-[350px]">
               <div class="h-64 bg-gradient-to-r from-[#8e44ad] to-[#3498db] relative overflow-hidden">
                 <div class="absolute inset-0 flex items-center justify-center">
                   <div class="w-36 h-36 rounded-full bg-neutral-800 flex items-center justify-center overflow-hidden">
@@ -1135,9 +1093,9 @@
                 </div>
               </div>
               <div class="p-6 relative">
-                <h3 class="text-xl font-bold mb-1 group-hover:text-[#e74c3c] transition-colors duration-300">Dr. Anita
+                <h3 class="text-xl font-bold group-hover:text-[#e74c3c] transition-colors duration-300">Dr. Anita
                   Mahadevan-Jansen</h3>
-                <!-- <p class="text-[#8e44ad] font-medium mb-3">Co-Chair</p> -->
+                <p class="text-[#8e44ad] font-medium mb-3">Vanderbilt University</p>
                 <!-- <p class="text-gray-300 mb-4 text-sm">
               Research Interests: Fiber Optics, Optical Communication
             </p> -->
@@ -1158,7 +1116,7 @@
             </div>
             <!-- Core Professor 3 -->
             <div
-              class="bg-neutral-700 rounded-xl overflow-hidden shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl group">
+              class="bg-neutral-700 rounded-xl overflow-hidden shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl group min-w-[350px]">
               <div class="h-64 bg-gradient-to-r from-[#8e44ad] to-[#3498db] relative overflow-hidden">
                 <div class="absolute inset-0 flex items-center justify-center">
                   <div class="w-36 h-36 rounded-full bg-neutral-800 flex items-center justify-center overflow-hidden">
@@ -1168,9 +1126,9 @@
                 </div>
               </div>
               <div class="p-6 relative">
-                <h3 class="text-xl font-bold mb-1 group-hover:text-[#e74c3c] transition-colors duration-300">Dr. Shobha
+                <h3 class="text-xl font-bold group-hover:text-[#e74c3c] transition-colors duration-300">Dr. Shobha
                   Shukla</h3>
-                <!-- <p class="text-[#8e44ad] font-medium mb-3">Scientific Secretary</p> -->
+                <p class="text-[#8e44ad] font-medium mb-3">IIT Bombay</p>
                 <!-- <p class="text-gray-300 mb-4 text-sm">
               Research Interests: Photonic Devices, Nanophotonics
             </p> -->
@@ -1191,7 +1149,7 @@
             </div>
             <!-- Core Professor 4 -->
             <div
-              class="bg-neutral-700 rounded-xl overflow-hidden shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl group">
+              class="bg-neutral-700 rounded-xl overflow-hidden shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl group min-w-[350px]">
               <div class="h-64 bg-gradient-to-r from-[#8e44ad] to-[#3498db] relative overflow-hidden">
                 <div class="absolute inset-0 flex items-center justify-center">
                   <div class="w-36 h-36 rounded-full bg-neutral-800 flex items-center justify-center overflow-hidden">
@@ -1201,9 +1159,9 @@
                 </div>
               </div>
               <div class="p-6 relative">
-                <h3 class="text-xl font-bold mb-1 group-hover:text-[#e74c3c] transition-colors duration-300">Dr. Sujatha
+                <h3 class="text-xl font-bold group-hover:text-[#e74c3c] transition-colors duration-300">Dr. Sujatha
                   Narayanan Unni</h3>
-                <!-- <p class="text-[#8e44ad] font-medium mb-3">Finance Chair</p> -->
+                <p class="text-[#8e44ad] font-medium mb-3">IIT Madras</p>
                 <!-- <p class="text-gray-300 mb-4 text-sm">
               Research Interests: Optical Materials, Laser Physics
             </p> -->
@@ -1224,7 +1182,7 @@
             </div>
             <!-- Core Professor 5 -->
             <div
-              class="bg-neutral-700 rounded-xl overflow-hidden shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl group">
+              class="bg-neutral-700 rounded-xl overflow-hidden shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl group min-w-[350px]">
               <div class="h-64 bg-gradient-to-r from-[#8e44ad] to-[#3498db] relative overflow-hidden">
                 <div class="absolute inset-0 flex items-center justify-center">
                   <div class="w-36 h-36 rounded-full bg-neutral-800 flex items-center justify-center overflow-hidden">
@@ -1234,9 +1192,9 @@
                 </div>
               </div>
               <div class="p-6 relative">
-                <h3 class="text-xl font-bold mb-1 group-hover:text-[#e74c3c] transition-colors duration-300">Dr.
+                <h3 class="text-xl font-bold group-hover:text-[#e74c3c] transition-colors duration-300">Dr.
                   Rupamanjari Ghosh</h3>
-                <!-- <p class="text-[#8e44ad] font-medium mb-3">Outreach Chair</p> -->
+                <p class="text-[#8e44ad] font-medium mb-3">JNU & SNU (Formerly)</p>
                 <!-- <p class="text-gray-300 mb-4 text-sm">
               Research Interests: Ultrafast Optics, Optical Instrumentation
             </p> -->
@@ -1260,12 +1218,12 @@
 
         <!-- Local Organising Committee -->
         <h3 class="text-2xl font-bold mb-8 text-center text-[#8e44ad]">Local Organising Committee</h3>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="flex flex-wrap gap-8 justify-center">
           <!-- ...existing local committee professor cards here... -->
           <!-- Example: -->
           <!-- Professor 1 -->
           <div
-            class="bg-neutral-700 rounded-xl overflow-hidden shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl group">
+            class="bg-neutral-700 rounded-xl overflow-hidden shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl group min-w-[350px]">
             <div class="h-64 bg-gradient-to-r from-[#3498db] to-[#2ecc71] relative overflow-hidden">
               <div class="absolute inset-0 flex items-center justify-center">
                 <div class="w-36 h-36 rounded-full bg-neutral-800 flex items-center justify-center overflow-hidden">
@@ -1274,31 +1232,36 @@
                 </div>
               </div>
             </div>
-            <div class="p-6 relative">
-              <h3 class="text-xl font-bold mb-1 group-hover:text-[#e74c3c] transition-colors duration-300">Prof. Neena
+            <div class="p-6">
+              <h3 class="text-xl font-bold group-hover:text-[#e74c3c] transition-colors duration-300">Prof. Neena
                 Gupta</h3>
-              <p class="text-[#8e44ad] font-medium mb-3">Professor</p>
+              <p class="text-[#8e44ad] font-medium mb-3">PEC, Chandigarh</p>
               <!-- <p class="text-gray-300 mb-4 text-sm">
             Research Interests: Communication Engg, Optical Communication, wireless Communication
           </p> -->
-              <div class="absolute bottom-6 right-6">
-                <!-- <span class="text-xs text-gray-400">Ph.D., Caltech</span> -->
-                <div class="absolute bottom-6 right-6">
-                  <a href="https://www.linkedin.com/in/neena-gupta-26400117/"
-                    class="text-gray-400 hover:text-white transition-colors duration-300">
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <div class="flex justify-between items-center" id="el-8qu0o5x8">
+                <!-- <span class="text-xs text-gray-400" id="el-f52x6fnm">Ph.D., MIT</span> -->
+                <div class="absolute bottom-6 right-6" id="el-2go9vcqk">
+                  <a href="https://www.linkedin.com/in/neena-gupta-26400117/" target="_blank"
+                    class="text-gray-400 hover:text-white transition-colors duration-300" id="el-hmwr9rxr">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" id="el-h4kx39f7">
                       <path
-                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z">
-                      </path>
+                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                        id="el-nqc9qynq"></path>
                     </svg>
                   </a>
+                  <!-- <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300" id="el-tadi0e4s">
+  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" id="el-nt5kow7w">
+    <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z" id="el-7fu05s83"></path>
+  </svg>
+</a> -->
                 </div>
               </div>
             </div>
           </div>
           <!-- Professor 2 -->
           <div
-            class="bg-neutral-700 rounded-xl overflow-hidden shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl group"
+            class="bg-neutral-700 rounded-xl overflow-hidden shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl group min-w-[350px]"
             id="el-q1w0zm2z">
             <div class="h-64 bg-gradient-to-r from-[#3498db] to-[#2ecc71] relative overflow-hidden" id="el-d684zidw">
               <div class="absolute inset-0 flex items-center justify-center" id="el-fwpk9hno">
@@ -1311,9 +1274,9 @@
             </div>
 
             <div class="p-6" id="el-80uvaacm">
-              <h3 class="text-xl font-bold mb-1 group-hover:text-[#e74c3c] transition-colors duration-300"
-                id="el-4k8nby5k">Prof. Jyoti Kedia</h3>
-              <p class="text-[#8e44ad] font-medium mb-3" id="el-5b0ugzo0">Associate Professor</p>
+              <h3 class="text-xl font-bold group-hover:text-[#e74c3c] transition-colors duration-300" id="el-4k8nby5k">
+                Prof. Jyoti Kedia</h3>
+              <p class="text-[#8e44ad] font-medium mb-3" id="el-5b0ugzo0">PEC, Chandigarh</p>
               <!-- <p class="text-gray-300 mb-4 text-sm" id="el-9dce5t9l">
   Research Interests: Photonic Integrated Circuit design, VLSI Design, IoT, Embedded Systems
 </p> -->
@@ -1340,7 +1303,7 @@
 
           <!-- Professor 3 -->
           <div
-            class="bg-neutral-700 rounded-xl overflow-hidden shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl group"
+            class="bg-neutral-700 rounded-xl overflow-hidden shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl group min-w-[350px]"
             id="el-cd6xb3mm">
             <div class="h-64 bg-gradient-to-r from-[#3498db] to-[#2ecc71] relative overflow-hidden" id="el-d684zidw">
               <div class="absolute inset-0 flex items-center justify-center" id="el-fwpk9hno">
@@ -1352,9 +1315,9 @@
               </div>
             </div>
             <div class="p-6" id="el-lkf28bua">
-              <h3 class="text-xl font-bold mb-1 group-hover:text-[#e74c3c] transition-colors duration-300"
-                id="el-rxws0ac2">Prof. Divya Dhawan</h3>
-              <p class="text-[#8e44ad] font-medium mb-3" id="el-go5avuix">Associate Professor</p>
+              <h3 class="text-xl font-bold group-hover:text-[#e74c3c] transition-colors duration-300" id="el-rxws0ac2">
+                Prof. Divya Dhawan</h3>
+              <p class="text-[#8e44ad] font-medium mb-3" id="el-go5avuix">PEC, Chandigarh</p>
               <!-- <p class="text-gray-300 mb-4 text-sm" id="el-moeekhba">
   Research Interests: Optical Communication,Photonics Systems
 </p> -->
@@ -1382,7 +1345,7 @@
 
 
           <!-- Professor 4 -->
-          <!-- <div class="bg-neutral-700 rounded-xl overflow-hidden shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl group" id="el-txm4spph">
+          <!-- <div class="bg-neutral-700 rounded-xl overflow-hidden shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl group min-w-[350px]" id="el-txm4spph">
 <div class="h-64 bg-gradient-to-r from-[#1abc9c] to-[#16a085] relative overflow-hidden" id="el-fnhoibna">
 <div class="absolute inset-0 flex items-center justify-center" id="el-eynmqeis">
 <div class="w-28 h-28 rounded-full bg-neutral-800 flex items-center justify-center" id="el-s6m41tu4">
@@ -1391,7 +1354,7 @@
 </div>
 </div>
 <div class="p-6" id="el-9w3sief7">
-<h3 class="text-xl font-bold mb-1 group-hover:text-[#e74c3c] transition-colors duration-300" id="el-3i9zml5f">Prof. Aisha Patel</h3>
+<h3 class="text-xl font-bold group-hover:text-[#e74c3c] transition-colors duration-300" id="el-3i9zml5f">Prof. Aisha Patel</h3>
 <p class="text-[#8e44ad] font-medium mb-3" id="el-ouzet4ua">Associate Professor • Biophotonics</p>
 <p class="text-gray-300 mb-4 text-sm" id="el-cnervia6">
 Pioneering optical techniques for biomedical imaging and early disease detection.
@@ -1946,7 +1909,7 @@ Contact Our Team
               },
               {
                 time: "06:30 PM - 07:00 PM",
-                activity: "Talk by Chief Guest (Kiran Bedi/Sudha Murti/Kiran Shaw)",
+                activity: "Talk by Chief Guest",
               },
               {
                 time: "07:00 PM - 07:30 PM",
@@ -1960,17 +1923,17 @@ Contact Our Team
             day2: [
               {
                 time: "09:00 AM - 09:45 AM",
-                activity: "Plenary Talk-1 (CSIR Director Gen/...)",
+                activity: "Plenary Talk-1",
               },
               {
                 time: "10:00 AM - 10:30 AM",
                 activity:
-                  "Session I: Integrated and On-Chip Optics - Technical talk 1: Dr. Geetanjali Yadav, Dr. Manju Rani",
+                  "Session I: Integrated and On-Chip Optics - Technical talk 1",
               },
               {
                 time: "10:30 AM - 11:00 AM",
                 activity:
-                  "Session I: Integrated and On-Chip Optics - Technical talk 2: Dr. Pratibha Singhal, Dr. Harveen Kaur",
+                  "Session I: Integrated and On-Chip Optics - Technical talk 2",
               },
               {
                 time: "11:00 AM - 11:15 AM",
@@ -1978,17 +1941,17 @@ Contact Our Team
               },
               {
                 time: "11:15 AM - 12:15 PM",
-                activity: "Workshop by Prof. Anita Mahadevan",
+                activity: "Workshop by Prof. Anita Mahadevan, Vanderbilt University, USA",
               },
               {
                 time: "12:15 PM - 12:45 PM",
                 activity:
-                  "Session II: Biophotonics and Optical Sensors - Technical talk 3: Dr. Sarita Aggarwal, Dr. Neetu Bhardwaj",
+                  "Session II: Biophotonics and Optical Sensors - Technical talk 3",
               },
               {
                 time: "12:45 PM - 01:15 PM",
                 activity:
-                  "Session II: Biophotonics and Optical Sensors - Technical talk 4: Dr. Ritu Soni, Dr. Anju Pandey, Dr. Jyoti K. Sharma",
+                  "Session II: Biophotonics and Optical Sensors - Technical talk 4",
               },
               {
                 time: "01:30 PM - 02:30 PM",
@@ -2024,17 +1987,18 @@ Contact Our Team
               {
                 time: "10:00 AM - 10:30 AM",
                 activity:
-                  "Wellness workshop: Strength & Confidence: Building Mental & Emotional Resilience",
+                  `Wellness workshop: "Strength & Confidence: Building Mental & Emotional Resilience"
+<br> Techniques to enhance self-confidence, set boundaries, and develop emotional strength.`,
               },
               {
                 time: "10:30 AM - 11:00 AM",
                 activity:
-                  "Session IV: Quantum Technology and Optical Communication - Technical talk 5: Dr. Neha K. Gupta, Dr. Shubhra Bansal",
+                  "Session IV: Quantum Technology and Optical Communication - Technical talk 5",
               },
               {
                 time: "11:00 AM - 11:30 AM",
                 activity:
-                  "Session IV: Quantum Technology and Optical Communication - Technical talk 6: Dr. Amrita Roy, Dr. Shubhee Sharma",
+                  "Session IV: Quantum Technology and Optical Communication - Technical talk 6",
               },
               {
                 time: "11:30 AM - 11:45 AM",
@@ -2051,7 +2015,7 @@ Contact Our Team
               {
                 time: "03:00 PM - 03:30 PM",
                 activity:
-                  "Session V: Optical materials and Devices - Technical talk 7: Dr. Anjali Tyagi, Dr. Jyothi Yadav",
+                  "Session V: Optical materials and Devices - Technical talk 7",
               },
               {
                 time: "03:30 PM - 04:30 PM",
@@ -2073,16 +2037,55 @@ Contact Our Team
             ],
           };
 
+          function getActivityColor(activity) {
+            if (activity.includes("Inaugural Session")) {
+              return "bg-yellow-300";
+            }
+            else if (activity.includes("Talk by Chief Guest")) {
+              return "bg-[#FDE8D8]";
+            }
+            else if (activity.includes("3 in 1")) {
+              return "bg-[#B6D7A8]"
+            } else if (activity.includes("Poster Presentation")) {
+              return "bg-[#FBE4D5]"
+            }
+            else if (activity.includes("Technical talk")) {
+              return "bg-pink-200";
+            } else if (activity.toLowerCase().includes("workshop")) {
+              return "bg-green-300";
+            } else if (activity.includes("Panel Discussion")) {
+              return "bg-yellow-200";
+            } else if (activity.includes("Plenary Talk")) {
+              return "bg-orange-300";
+            } else if (activity.includes("Cultural event") || activity.includes("Guided visit")) {
+              return "bg-purple-200";
+            } else if (activity.includes("Valedictory & Prize Distribution")) {
+              return "bg-[#DEEAF6]";
+            }
+            else if (
+              activity.includes("Gala Dinner") ||
+              activity.includes("Dinner")
+            ) {
+              return "bg-[#F3F3F3]";
+            } else if (activity.includes("Poster Presentation")) {
+              return "bg-purple-200";
+            }
+
+            // Default color for other activities
+            return "bg-gray-50";
+          }
+
           function createSchedule(day, data) {
             const dayDiv = document.getElementsByClassName(`schedule-${day}`)[0];
 
             const dayContent = data
               .map((session) => {
+                const colorClass = getActivityColor(session.activity);
                 return `<div class="grid grid-cols-8 border-b border-gray-100">
-                <div class="col-span-2 px-4 py-3 bg-gray-50 font-semibold text-gray-700 whitespace-nowrap">
+                <div class="col-span-2 px-4 py-3 ${colorClass} font-semibold text-gray-700 whitespace-nowrap">
                   ${session.time}
                 </div>
-                <div class="col-span-6 px-4 py-3">
+                <div class="col-span-6 px-4 py-3 ${colorClass}">
                   <span class="font-medium">${session.activity}</span>
                 </div>
               </div>`;
@@ -2327,5 +2330,6 @@ Contact Our Team
   </section>
   </div>
 </body>
+
 
 </html>

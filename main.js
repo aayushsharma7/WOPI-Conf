@@ -138,16 +138,43 @@ document.addEventListener("DOMContentLoaded", () => {
     ],
   };
 
+  function getActivityColor(activity) {
+    if (activity.includes("Inaugural Session")) {
+      return "bg-yellow-300";
+    } else if (activity.includes("Technical talk")) {
+      return "bg-pink-200";
+    } else if (activity.includes("Workshop")) {
+      return "bg-green-300";
+    } else if (activity.includes("Panel Discussion")) {
+      return "bg-yellow-200";
+    } else if (activity.includes("Plenary Talk")) {
+      return "bg-orange-300";
+    } else if (activity.includes("Cultural event")) {
+      return "bg-purple-200";
+    } else if (
+      activity.includes("Gala Dinner") ||
+      activity.includes("Dinner")
+    ) {
+      return "bg-purple-200";
+    } else if (activity.includes("Poster Presentation")) {
+      return "bg-purple-200";
+    }
+
+    // Default color for other activities
+    return "bg-gray-50";
+  }
+
   function createSchedule(day, data) {
     const dayDiv = document.getElementsByClassName(`schedule-${day}`)[0];
 
     const dayContent = data
       .map((session) => {
+        const colorClass = getActivityColor(session.activity);
         return `<div class="grid grid-cols-8 border-b border-gray-100">
-                <div class="col-span-2 px-4 py-3 bg-gray-50 font-semibold text-gray-700 whitespace-nowrap">
+                <div class="col-span-2 px-4 py-3 ${colorClass} font-semibold text-gray-700">
                   ${session.time}
                 </div>
-                <div class="col-span-6 px-4 py-3">
+                <div class="col-span-6 px-4 py-3 ${colorClass}">
                   <span class="font-medium">${session.activity}</span>
                 </div>
               </div>`;
