@@ -1923,16 +1923,18 @@ Contact Our Team
               {
                 time: "09:00 AM - 09:45 AM",
                 activity: "Plenary Talk-1",
+              }, {
+                activity: "Session I: Integrated and On-Chip Optics",
               },
               {
                 time: "10:00 AM - 10:30 AM",
                 activity:
-                  "Session I: Integrated and On-Chip Optics - Technical talk 1",
+                  "Technical talk 1",
               },
               {
                 time: "10:30 AM - 11:00 AM",
                 activity:
-                  "Session I: Integrated and On-Chip Optics - Technical talk 2",
+                  "Technical talk 2",
               },
               {
                 time: "11:00 AM - 11:15 AM",
@@ -1943,23 +1945,29 @@ Contact Our Team
                 activity: "Workshop by Prof. Anita Mahadevan, Vanderbilt University, USA",
               },
               {
+                activity: "Session II: Biophotonics and Optical Sensors",
+              },
+              {
                 time: "12:15 PM - 12:45 PM",
                 activity:
-                  "Session II: Biophotonics and Optical Sensors - Technical talk 3",
+                  "Technical talk 3",
               },
               {
                 time: "12:45 PM - 01:15 PM",
                 activity:
-                  "Session II: Biophotonics and Optical Sensors - Technical talk 4",
+                  "Technical talk 4",
               },
               {
                 time: "01:30 PM - 02:30 PM",
                 activity: "Lunch",
               },
               {
+                activity: "Session III: Photonic Computing and Artificial Intelligence",
+              },
+              {
                 time: "02:30 PM - 03:30 PM",
                 activity:
-                  "Session III: Photonic Computing and Artificial Intelligence - Panel Discussion I: Discussing the paradigm shifts in research driven by AI",
+                  "Panel Discussion I: Discussing the paradigm shifts in research driven by AI",
               },
               {
                 time: "03:30 PM - 04:30 PM",
@@ -1990,14 +1998,17 @@ Contact Our Team
 <br> Techniques to enhance self-confidence, set boundaries, and develop emotional strength.`,
               },
               {
+                activity: "Session IV: Quantum Technology and Optical Communication",
+              },
+              {
                 time: "10:30 AM - 11:00 AM",
                 activity:
-                  "Session IV: Quantum Technology and Optical Communication - Technical talk 5",
+                  "Technical talk 5",
               },
               {
                 time: "11:00 AM - 11:30 AM",
                 activity:
-                  "Session IV: Quantum Technology and Optical Communication - Technical talk 6",
+                  "Technical talk 6",
               },
               {
                 time: "11:30 AM - 11:45 AM",
@@ -2012,9 +2023,12 @@ Contact Our Team
                 activity: "Lunch",
               },
               {
+                activity: "Session V: Optical materials and Devices",
+              },
+              {
                 time: "03:00 PM - 03:30 PM",
                 activity:
-                  "Session V: Optical materials and Devices - Technical talk 7",
+                  "Technical talk 7",
               },
               {
                 time: "03:30 PM - 04:30 PM",
@@ -2077,11 +2091,24 @@ Contact Our Team
           function createSchedule(day, data) {
             const dayDiv = document.getElementsByClassName(`schedule-${day}`)[0];
 
+
             const dayContent = data
               .map((session) => {
                 const colorClass = getActivityColor(session.activity);
+                const isSession = session.activity.startsWith("Session") && !session.time;
+                let extra = "";
+                if (isSession) {
+                  return `<div class="grid grid-cols-8 border-b border-gray-100">
+                <div class="col-span-2 px-4 py-3 bg-gray-50 font-semibold text-gray-700 whitespace-nowrap">
+               
+                </div>
+                <div class="col-span-6 px-4 py-3 text-center bg-gray-50">
+                  <span class="font-medium">${session.activity}</span>
+                </div>
+              </div>`
+                }
                 return `<div class="grid grid-cols-8 border-b border-gray-100">
-                <div class="col-span-2 px-4 py-3 ${colorClass} font-semibold text-gray-700 whitespace-nowrap">
+                <div class="col-span-2 px-4 py-3 border-r-2 ${colorClass} font-semibold text-gray-700 whitespace-nowrap">
                   ${session.time}
                 </div>
                 <div class="col-span-6 px-4 py-3 ${colorClass}">
