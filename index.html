@@ -1071,12 +1071,64 @@
         </div>
 
         <!-- Core Organising Committee -->
+        <style>
+          .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 32px;
+            /* Equivalent to gap-8 in Tailwind */
+            justify-content: center;
+            max-width: 1500px;
+            margin-left: auto;
+            margin-right: auto;
+          }
+
+          .card {
+            min-width: 345px;
+            flex: 0 0 345px;
+            /* Fixed width, no shrinking or growing */
+          }
+
+          @media (min-width: 1300px) and (max-width: 1530px) {
+            .card-container {
+              max-width: 722px;
+              /* Fits exactly 2 cards + 1 gap */
+              justify-content: center;
+            }
+          }
+
+
+          @media (max-width: 1475px) and (min-width: 758px) {
+            .card-container {
+              justify-content: space-around;
+              /* Distribute cards evenly for 2+2 */
+            }
+
+            .card {
+              flex: 0 0 345px;
+              /* Maintain fixed width */
+              max-width: 345px;
+              /* Ensure no stretching */
+            }
+          }
+
+          @media (max-width: 757px) {
+            .card {
+              flex: 0 0 345px;
+              /* Maintain fixed width */
+              max-width: 345px;
+              /* Ensure no stretching */
+              width: 100%;
+              /* Allow full width of container, but capped at 345px */
+            }
+          }
+        </style>
         <div class="mb-16">
           <h3 class="text-2xl font-bold mb-8 text-center text-[#e74c3c]">Core Organising Committee</h3>
-          <div class="flex flex-wrap gap-8 justify-center max-w-[1500px] mx-auto">
+          <div class="card-container">
             <!-- Core Professor 1 -->
             <div
-              class="bg-neutral-700 rounded-xl overflow-hidden shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl group min-w-[345px]">
+              class="bg-neutral-700 rounded-xl overflow-hidden shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl group card">
               <div class="h-64 bg-gradient-to-r from-[#8e44ad] to-[#3498db] relative overflow-hidden">
                 <div class="absolute inset-0 flex items-center justify-center">
                   <div class="w-60 h-60 rounded-full bg-neutral-800 flex items-center justify-center overflow-hidden">
@@ -1105,7 +1157,7 @@
             </div>
             <!-- Core Professor 2 -->
             <div
-              class="bg-neutral-700 rounded-xl overflow-hidden shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl group min-w-[345px]">
+              class="bg-neutral-700 rounded-xl overflow-hidden shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl group card">
               <div class="h-64 bg-gradient-to-r from-[#8e44ad] to-[#3498db] relative overflow-hidden">
                 <div class="absolute inset-0 flex items-center justify-center">
                   <div class="w-60 h-60 rounded-full bg-neutral-800 flex items-center justify-center overflow-hidden">
@@ -1133,7 +1185,7 @@
             </div>
             <!-- Core Professor 3 -->
             <div
-              class="bg-neutral-700 rounded-xl overflow-hidden shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl group min-w-[345px]">
+              class="bg-neutral-700 rounded-xl overflow-hidden shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl group card">
               <div class="h-64 bg-gradient-to-r from-[#8e44ad] to-[#3498db] relative overflow-hidden">
                 <div class="absolute inset-0 flex items-center justify-center">
                   <div class="w-60 h-60 rounded-full bg-neutral-800 flex items-center justify-center overflow-hidden">
@@ -1162,7 +1214,7 @@
             </div>
             <!-- Core Professor 4 -->
             <div
-              class="bg-neutral-700 rounded-xl overflow-hidden shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl group min-w-[345px]">
+              class="bg-neutral-700 rounded-xl overflow-hidden shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl group card">
               <div class="h-64 bg-gradient-to-r from-[#8e44ad] to-[#3498db] relative overflow-hidden">
                 <div class="absolute inset-0 flex items-center justify-center">
                   <div class="w-60 h-60 rounded-full bg-neutral-800 flex items-center justify-center overflow-hidden">
@@ -1943,6 +1995,7 @@ Contact Our Team
                 activity: "3 in 1 Thesis presentation",
               },
               {
+                time: "01:45 PM - 02:30 PM",
                 activity: "Lunch",
               },
               {
@@ -2012,28 +2065,28 @@ Contact Our Team
                   "Panel Discussion IV:  Empowering Women for journey to Success"
               },
               {
-                time: "12:15 PM - 02:00 PM",
+                time: "12:15 PM - 01:45 PM",
                 activity: "Poster Presentation-II",
               },
               {
-                time: "02:00 PM - 03:00 PM",
+                time: "01:45 PM - 02:45 PM",
                 activity: "Lunch",
               },
               {
                 activity: "Session V: Optical materials and Devices",
               },
               {
-                time: "03:00 PM - 03:30 PM",
+                time: "02:45 PM - 03:15 PM",
                 activity:
                   "Technical talk 8",
               },
               {
-                time: "03:30 PM - 04:00 PM",
+                time: "03:15 PM - 03:45 PM",
                 activity:
                   "Technical talk 9",
               },
               {
-                time: "04:30 PM - 05:00 PM",
+                time: "03:45 PM - 05:00 PM",
                 activity:
                   "Panel Discussion V: Entrepreneurship and Funding Today",
               },
